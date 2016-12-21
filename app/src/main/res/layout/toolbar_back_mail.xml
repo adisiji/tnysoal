@@ -1,0 +1,58 @@
+<android.support.v7.widget.Toolbar android:id="@+id/toolbar_bax"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@color/prim_red"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/toolbar_back_btn"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="Back"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true" />
+
+        <ImageView
+            android:id="@+id/pict_profile_toolbar"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_account_circle_white_48dp"
+            android:layout_margin="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:id="@+id/line_right"
+            android:layout_toLeftOf="@id/pict_profile_toolbar"
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/line_right"
+            android:src="@drawable/ic_email_white_48dp"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

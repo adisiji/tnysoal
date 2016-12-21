@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_back"
+        android:id="@+id/toolbar_create"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/grad_login" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        >
+
+                        <custom_font.TextViewMyriad
+                            android:layout_weight="2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="@string/demail"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"/>
+
+                        <custom_font.MyEditText
+                            android:layout_weight="3"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:paddingLeft="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:letterSpacing="0.1"
+                            android:drawablePadding="10dp"
+                            android:textSize="13dp"
+                            android:id="@+id/txt_create_email"
+                            android:background="@drawable/white_box_grey_stroke"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp">
+
+                        <custom_font.TextViewMyriad
+                            android:layout_weight="2"
+                            android:layout_width="0dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/namatampil"
+                            android:letterSpacing="0.1"
+                            android:textSize="13sp"
+                            android:id="@+id/myTextView2" />
+
+                        <custom_font.MyEditText
+                            android:id="@+id/txt_create_nama"
+                            android:layout_weight="3"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:paddingLeft="10dp"
+                            android:letterSpacing="0.1"
+                            android:background="@drawable/white_box_grey_stroke"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp" >
+
+                        <custom_font.TextViewMyriad
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/password"
+                            android:layout_weight="2"
+                            android:id="@+id/myTextView3" />
+
+                        <custom_font.MyEditText
+                            android:id="@+id/txt_create_password"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/white_box_grey_stroke"
+                            android:paddingLeft="10dp"
+                            android:paddingStart="10dp"
+                            android:inputType="textPassword"
+                            android:textSize="13sp"
+                            android:letterSpacing="0.1"
+                            android:layout_weight="3"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp">
+
+                        <custom_font.TextViewMyriad
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:text="@string/konfirm_password"
+                            android:id="@+id/myTextView4" />
+
+                        <custom_font.MyEditText
+                            android:id="@+id/txt_create_confpass"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/white_box_grey_stroke"
+                            android:paddingLeft="10dp"
+                            android:inputType="textPassword"
+                            android:textSize="13dp"
+                            android:letterSpacing="0.1"
+                            android:layout_weight="3"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp">
+
+                        <custom_font.TextViewMyriad
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="@string/jns_akademik"
+                            android:gravity="center_vertical"
+                            android:layout_weight="2"/>
+
+                        <com.jaredrummler.materialspinner.MaterialSpinner
+                            android:id="@+id/txt_create_jenakad"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:textColor="@color/txt_black"
+                            android:textSize="13sp"
+                            android:background="@drawable/white_box_grey_stroke"
+                            android:letterSpacing="0.1"
+                            android:layout_weight="3"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp">
+
+                        <custom_font.TextViewMyriad
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="@string/tkt_akad"
+                            android:gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:id="@+id/myTextView5" />
+
+                        <com.jaredrummler.materialspinner.MaterialSpinner
+                            android:id="@+id/spin_tingkat_akad"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:textColor="@color/txt_black"
+                            android:textSize="13sp"
+                            android:letterSpacing="0.1"
+                            android:layout_weight="3"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp">
+                        <custom_font.TextViewMyriad
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="2"
+                            android:text="@string/sekolah"
+                            android:gravity="center_vertical"/>
+                        <custom_font.MyEditText
+                            android:id="@+id/txt_create_sekolah"
+                            android:layout_weight="3"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/white_box_grey_stroke"
+                            android:letterSpacing="0.1"
+                            android:textColorHint="@color/txt_hint_login"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="5"   >
+                        <custom_font.TextViewMyriad
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="2"
+                            android:text="@string/kd_promo"
+                            android:gravity="center_vertical"/>
+
+                        <custom_font.MyEditText
+                            android:id="@+id/txt_kd_promo"
+                            android:layout_weight="2"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/white_box_grey_stroke"
+                            android:letterSpacing="0.1"
+                            android:gravity="center"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+
+                    <custom_font.TextViewMyriad
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/sec_question"
+                        android:textSize="16sp"
+                        android:id="@+id/myTextView6" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp">
+
+                        <custom_font.TextViewMyriad
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="2"
+                            android:text="@string/nama_lkp"
+                            android:gravity="center_vertical" />
+
+                        <custom_font.MyEditText
+                            android:id="@+id/txt_nama_lkp"
+                            android:layout_weight="3"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/white_box_grey_stroke"
+                            android:paddingLeft="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:letterSpacing="0.1"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp">
+
+                        <custom_font.TextViewMyriad
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="2"
+                            android:text="@string/no_hp"
+                            android:gravity="center_vertical"/>
+
+                        <custom_font.MyEditText
+                            android:id="@+id/txt_no_hp"
+                            android:layout_weight="3"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/white_box_grey_stroke"
+                            android:paddingLeft="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:letterSpacing="0.1"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp">
+
+                        <custom_font.TextViewMyriad
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="2"
+                            android:text="@string/tgl_lahir"
+                            android:gravity="center_vertical"/>
+
+                        <custom_font.MyEditText
+                            android:id="@+id/daftar_tgl_lhr"
+                            android:layout_weight="3"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/white_box_grey_stroke"
+                            android:paddingLeft="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:letterSpacing="0.1"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+
+                    <custom_font.TextViewMyriad
+                        android:id="@+id/btn_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/prim_red"
+                        android:text="@string/signup"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="50dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragment_navigation_drawer"
+        android:name="nb.scode.tanyasoal.FragmentDrawer"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

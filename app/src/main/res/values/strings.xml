@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Tanya Soal</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="banner_login">DAFTAR DAN NIKMATI\nFree Trial (48 jam)\nLAYANAN TANYA TUTOR </string>
+
+    <!--daftar-->
+    <string name="demail">Alamat Email</string>
+    <string name="sec_question">Security Question (Apabila Lupa Password)</string>
+    <string name="nama_lkp">Nama Lengkap</string>
+    <string name="no_hp">No Handphone</string>
+    <string name="tgl_lahir">Tgl Lahir</string>
+
+    <string name="namatampil">Nama Tampilan</string>
+    <string name="konfirm_password">Konfirmasi Password</string>
+    <string name="jns_akademik">Jenis Akademik</string>
+    <string name="tkt_akad">Tingkat Akademik</string>
+    <string name="sekolah">Sekolah</string>
+    <string name="kd_promo">Kode Promo</string>
+
+    <!--HomePage User-->
+    <string name="welcome_dummy">Selamat Datang, ABC</string>
+    <string name="welcome_dummy2">Saldo Anda: Rp 0\nLangganan Layanan 12 JAM FOTO berlaku s/d 30 DES 2016</string>
+    <string name="welcome_dummy3">Lihat catatan penggunaan</string>
+    <string name="isi_saldo">Isi Saldo</string>
+    <string name="paket_sedia">Paket tersedia</string>
+
+    <string name="tap_exit">Press back again to exit</string>
+
+    <string name="hint_tanya_box"><i>Tanya soal anda disini\n(Cantumkan nomor soal yang ditanya)</i></string>
+    <string name="jml_soal_ditanya">Jumlah soal yang ditanyakan: </string>
+    <string name="pilih_subjek">Pilih Subjek</string>
+    <string name="jawab_dengan">Jawab dengan:</string>
+
+    <!--action-->
+    <string name="login">Masuk</string>
+    <string name="signup">Daftar</string>
+    <string name="forgot_pwd">Lupa Password</string>
+    <string name="tanya_tutor">Tanya Tutor</string>
+    <string name="komunitas">Komunitas</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="kirim">Kirim</string>
+    <string name="batal">Batal</string>
+
+    <!--subjek-->
+    <string name="matematika">Matematika</string>
+    <string name="fisika">Fisika</string>
+    <string name="kimia">Kimia</string>
+    <string name="biologi">Biologi</string>
+    <string name="bhs_inggris">B. Inggris</string>
+
+    <string name="foto_12jam">Foto (12 jam)</string>
+    <string name="foto_3jam_4k">Foto (3 jam)-Rp4.000/soal</string>
+    <string name="video_12jam_6k">Video (12 jam)-Rp6.000/soal</string>
+
+    <string name="jml_soal_hr_ini">Jumlah soal yang telah dipakai hari ini</string>
+    <string name="jml_soal_bln_ini">Jumlah soal yang telah dipakai bulan ini</string>
+
+    <string-array name="jns_akademik_array">
+        <item>International</item>
+        <item>Negeri</item>
+    </string-array>
+
+    <string-array name="tkt_akademik_array">
+        <item>1 SD</item>
+        <item>8 SMP</item>
+        <item>12 SMA</item>
+    </string-array>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string-array name="navDrawerItems">
+        <item>Home</item>
+        <item>Layanan Kami</item>
+        <item>Syllabus</item>
+        <item>FAQ</item>
+        <item>Tentang Kami</item>
+    </string-array>
+
+
+</resources>

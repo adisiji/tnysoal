@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_home_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.rp.holliday.nb.example.rp.holliday.HomePageActivity"
+        android:background="@drawable/grad_login">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_back_mail" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+
+            <custom_font.TextViewMyriad
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_dummy"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <custom_font.TextViewMyriad
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/welcome_dummy2"
+                android:gravity="center_horizontal"/>
+            <custom_font.TextViewMyriad
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_dummy3"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/holo_blue_dark"/>
+            <custom_font.TextViewMyriad
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+                android:text="@string/isi_saldo"
+                android:padding="12dp"
+                android:background="@drawable/blue_box_stroke"
+                android:textColor="@android:color/white"
+                android:gravity="center_horizontal"/>
+            <custom_font.TextViewMyriad
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+                android:text="@string/paket_sedia"
+                android:padding="12dp"
+                android:background="@drawable/blue_box_stroke"
+                android:textColor="@android:color/white"
+                android:gravity="center_horizontal"/>
+
+            <FrameLayout
+                android:id="@+id/btn_tny_tutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0f75ba"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp">
+
+                <custom_font.TextViewMyriad
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tanya_tutor"
+                    android:padding="12dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/round_transp"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0f75ba"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp">
+
+                <custom_font.TextViewMyriad
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/komunitas"
+                    android:padding="12dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/round_transp"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/fragment_navigation_drawer"
+        android:name="nb.scode.tanyasoal.FragmentDrawer"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

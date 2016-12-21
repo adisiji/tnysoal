@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:background="@drawable/nav_drawer_selector"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:clickable="true" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/tv_NavTitle"
+            android:textColor="#3c3b3b"
+            android:textSize="16sp"
+            android:text="Title"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
