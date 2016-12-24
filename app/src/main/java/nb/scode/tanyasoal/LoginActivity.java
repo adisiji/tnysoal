@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 
 import custom_font.*;
+import nb.scode.tanyasoal.baseAct.FragmentDrawer;
 
 public class LoginActivity extends AppCompatActivity implements FragmentDrawer.FragmentDrawerListener {
 

@@ -32,4 +32,6 @@ dependencies {
     compile 'com.jaredrummler:material-spinner:1.1.0'
     //multi line layout
     compile 'org.apmem.tools:layouts:1.10@aar'
+    //ripple effect button
+    compile 'com.github.traex.rippleeffect:library:1.3'
 }

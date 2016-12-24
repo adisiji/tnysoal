@@ -43,6 +43,13 @@
     <string name="gallery">Gallery</string>
     <string name="kirim">Kirim</string>
     <string name="batal">Batal</string>
+    
+    <string name="fre_forum">Free Forum</string>
+    <string name="artikel">Artikel</string>
+    <string name="video">Video</string>
+    <string name="soal_menarik">Soal Menarik</string>
+    <string name="xxx">\'?????</string>
+    <string name="lainnya">Lainnya</string>
 
     <!--subjek-->
     <string name="matematika">Matematika</string>

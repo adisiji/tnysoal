@@ -1,4 +1,4 @@
-package nb.scode.tanyasoal;
+package nb.scode.tanyasoal.baseAct;
 
 import android.app.Fragment;
 import android.content.Context;
@@ -15,6 +15,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
+
+import nb.scode.tanyasoal.R;
 
 public class FragmentDrawer extends Fragment{
 

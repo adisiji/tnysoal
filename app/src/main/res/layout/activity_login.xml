@@ -137,7 +137,7 @@
 
             </LinearLayout>
 
-            <custom_font.TextViewMyriad
+            <custom_font.TextViewApple
                  android:layout_width="115dp"
                  android:layout_height="wrap_content"
                  android:layout_marginTop="15dp"
@@ -185,7 +185,7 @@
 
     <fragment
         android:id="@+id/fragment_navigation_drawer"
-        android:name="nb.scode.tanyasoal.FragmentDrawer"
+        android:name="nb.scode.tanyasoal.baseAct.FragmentDrawer"
         android:layout_width="260dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"

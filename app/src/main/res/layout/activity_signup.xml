@@ -414,7 +414,7 @@
 
     <fragment
         android:id="@+id/fragment_navigation_drawer"
-        android:name="nb.scode.tanyasoal.FragmentDrawer"
+        android:name="nb.scode.tanyasoal.baseAct.FragmentDrawer"
         android:layout_width="260dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"

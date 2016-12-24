@@ -9,26 +9,26 @@ import android.widget.TextView;
  * Created by User on 12/21/2016.
  */
 
-public class TextViewAmerica extends TextView {
+public class TextViewApple extends TextView {
     
-    public TextViewAmerica(Context context, AttributeSet attrs, int defStyle) {
+    public TextViewApple(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init();
     }
 
-    public TextViewAmerica(Context context, AttributeSet attrs) {
+    public TextViewApple(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public TextViewAmerica(Context context) {
+    public TextViewApple(Context context) {
         super(context);
         init();
     }
 
     private void init() {
         if (!isInEditMode()) {
-            Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "fonts/American-Typewriter-Regular.ttf");
+            Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "fonts/AppleChancery.ttf");
             setTypeface(tf);
         }
     }

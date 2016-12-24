@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grad_login"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.andexert.library.RippleView
+                android:id="@+id/btn_fforum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="20dp"
+                android:background="#0f75ba"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                rv_centered="true" >
+
+                <custom_font.TextViewMyriad
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fre_forum"
+                    android:padding="12dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/round_transp"
+                    android:id="@+id/textViewMyriad" />
+
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/btn_artikel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="5dp"
+                android:background="#0f75ba"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                app:rv_centered="true">
+
+                <custom_font.TextViewMyriad
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/artikel"
+                    android:padding="12dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/round_transp"
+                    android:id="@+id/textViewMyriad2" />
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/btn_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="5dp"
+                android:background="#0f75ba"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                app:rv_centered="true">
+
+                <custom_font.TextViewMyriad
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/video"
+                    android:padding="12dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/round_transp"
+                    android:id="@+id/textViewMyriad3" />
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/btn_soal_menarik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="5dp"
+                android:background="#0f75ba"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                app:rv_centered="true">
+
+                <custom_font.TextViewMyriad
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/soal_menarik"
+                    android:padding="12dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/round_transp"
+                    android:id="@+id/textViewMyriad4" />
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/btn_dunno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="5dp"
+                android:background="#0f75ba"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                app:rv_centered="true">
+
+                <custom_font.TextViewMyriad
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/xxx"
+                    android:padding="12dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/round_transp"
+                    android:id="@+id/textViewMyriad5" />
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/btn_lainnya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="50dp"
+                android:background="#0f75ba"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                app:rv_centered="true">
+
+                <custom_font.TextViewMyriad
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lainnya"
+                    android:padding="12dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/round_transp"
+                    android:id="@+id/textViewMyriad6" />
+            </com.andexert.library.RippleView>
+
+        </LinearLayout>
+
+    </ScrollView>

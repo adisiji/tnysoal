@@ -1,39 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/activity_home_page"
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/grad_login"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <custom_font.TextViewApple
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.example.rp.holliday.nb.example.rp.holliday.HomePageActivity"
-        android:background="@drawable/grad_login">
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_dummy"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textViewMyriad7" />
 
-        <include
-            android:id="@+id/toolbar"
-            layout="@layout/toolbar_back_mail" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_below="@id/toolbar"
-            android:layout_marginTop="15dp"
-            android:gravity="center">
-
-            <custom_font.TextViewMyriad
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/welcome_dummy"
-                android:textStyle="bold"
-                android:textSize="18sp" />
-            <custom_font.TextViewMyriad
+    <custom_font.TextViewMyriad
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
@@ -93,6 +76,7 @@
             </FrameLayout>
 
             <FrameLayout
+                android:id="@+id/btn_komunitas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#0f75ba"
@@ -115,16 +99,3 @@
             </FrameLayout>
 
         </LinearLayout>
-
-    </RelativeLayout>
-
-    <fragment
-        android:id="@+id/fragment_navigation_drawer"
-        android:name="nb.scode.tanyasoal.FragmentDrawer"
-        android:layout_width="260dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:layout="@layout/fragment_navigation_drawer"
-        tools:layout="@layout/fragment_navigation_drawer" />
-
-</android.support.v4.widget.DrawerLayout>

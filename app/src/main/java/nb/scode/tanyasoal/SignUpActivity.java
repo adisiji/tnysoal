@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.jaredrummler.materialspinner.MaterialSpinner;
 
 import custom_font.TextViewMyriad;
+import nb.scode.tanyasoal.baseAct.FragmentDrawer;
 
 
 public class SignUpActivity extends AppCompatActivity implements FragmentDrawer.FragmentDrawerListener {
