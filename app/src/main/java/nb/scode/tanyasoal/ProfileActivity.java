@@ -1,10 +1,12 @@
 package nb.scode.tanyasoal;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.jaredrummler.materialspinner.MaterialSpinner;
 
 import custom_font.MyEditText;
+import custom_font.TextViewMyriad;
 import nb.scode.tanyasoal.baseAct.BaseActivity;
 
 public class ProfileActivity extends BaseActivity {
@@ -32,6 +34,14 @@ public class ProfileActivity extends BaseActivity {
         tlh = (MyEditText)findViewById(R.id.ed_tgl_lhr);
         setDummyText(dummyText);
 
+        TextViewMyriad kembali = (TextViewMyriad)findViewById(R.id.btn_kembali);
+        kembali.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
     }
 
     private void setDummyText(String dt){
@@ -44,4 +54,10 @@ public class ProfileActivity extends BaseActivity {
         hp.setText("1234567");
         tlh.setText("1/1/2016");
     }
+
+    @Override
+    protected boolean getToolbar(){
+        return false;
+    }
+
 }

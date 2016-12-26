@@ -27,7 +27,7 @@ public class TextViewMyriad extends TextView {
 
     private void init() {
         if (!isInEditMode()) {
-            Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "fonts/MyriadPro-Regular.otf");
+            Typeface tf = FontCache.get("fonts/MyriadPro-Regular.otf", getContext());
             setTypeface(tf);
         }
     }

@@ -19,7 +19,7 @@
             android:layout_height="fill_parent"
             android:background="@android:color/white" />
 
-        <TextView
+        <custom_font.TextViewApple
             android:id="@+id/toolbar_back_btn"
             style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
             android:layout_width="wrap_content"

@@ -28,7 +28,7 @@ public class TextViewApple extends TextView {
 
     private void init() {
         if (!isInEditMode()) {
-            Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "fonts/AppleChancery.ttf");
+            Typeface tf = FontCache.get("fonts/AppleChancery.ttf", getContext());
             setTypeface(tf);
         }
     }

@@ -39,6 +39,9 @@
     <string name="login">Masuk</string>
     <string name="signup">Daftar</string>
     <string name="forgot_pwd">Lupa Password</string>
+    <string name="lupa_sandi">Lupa Kata Sandi</string>
+    <string name="pass_baru">Password Baru</string>
+    <string name="ketik_ulang_pass">Ketik ulang Password</string>
     <string name="tanya_tutor">Tanya Tutor</string>
     <string name="komunitas">Komunitas</string>
     <string name="camera">Camera</string>

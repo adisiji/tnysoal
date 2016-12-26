@@ -65,5 +65,13 @@ public class LoginActivity extends AppCompatActivity implements FragmentDrawer.F
             }
         });
 
+        TextViewApple lupaPass = (TextViewApple)findViewById(R.id.forgotpwd);
+        lupaPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), LupaPassActivity.class);
+                startActivity(i);
+            }
+        });
     }
 }

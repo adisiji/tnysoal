@@ -358,7 +358,7 @@
     </LinearLayout>
 
     <custom_font.TextViewMyriad
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_simpan"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@color/prim_red"
