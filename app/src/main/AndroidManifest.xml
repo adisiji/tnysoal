@@ -26,7 +26,10 @@
 
         <activity android:name=".HomePageActivity" />
         <activity android:name=".TanyaTutorActivity" />
-        <activity android:name=".KomunitasActivity"></activity>
+        <activity android:name=".KomunitasActivity" />
+        <activity android:name=".PaketSediaActivity" />
+        <activity android:name=".IsiSaldoActivity" />
+        <activity android:name=".ProfileActivity"></activity>
     </application>
 
 </manifest>

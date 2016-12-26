@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/grad_login" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_paket_sedia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="nb.scode.tanyasoal.PaketSediaActivity">
+
+        <custom_font.TextViewApple
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Langganan"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/grey_box_stroke"
+                    android:padding="1dp">
+
+                    <LinearLayout
+                        android:id="@+id/t1"
+                        android:layout_height="95dp"
+                        android:background="#0f3338"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:gravity="center_vertical">
+
+                        <custom_font.TextViewMyriad
+                            android:id="@+id/foto_langKiri"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:text="@string/foto"
+                            android:textColor="@android:color/white"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:background="@drawable/round_transp"/>
+                        <custom_font.TextViewMyriad
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/jam_12"
+                            android:textColor="@android:color/white"
+                            android:layout_marginTop="5dp"/>
+                        <custom_font.TextViewMyriad
+                            android:id="@+id/t2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hari_5"
+                            android:textColor="@android:color/white"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_horizontal"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/t3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/t1"
+                        android:background="@android:color/white"
+                        android:orientation="vertical">
+                        <custom_font.TextViewMyriad
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/harga_40k"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_horizontal"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@android:color/black"/>
+                        <custom_font.TextViewMyriad
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:text="@string/total_20"
+                            android:gravity="center_horizontal"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <custom_font.TextViewMyriad
+                    android:id="@+id/btn_langfoto5"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aktifkan"
+                    android:gravity="center_horizontal"
+                    android:background="@color/blue_hx"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/grey_box_stroke"
+                    android:padding="1dp">
+
+                    <LinearLayout
+                        android:id="@+id/t4"
+                        android:layout_height="95dp"
+                        android:background="#0f3338"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:gravity="center_vertical">
+
+                        <custom_font.TextViewMyriad
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:text="@string/foto"
+                            android:textColor="@android:color/white"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:background="@drawable/round_transp"/>
+                        <custom_font.TextViewMyriad
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/jam_12"
+                            android:textColor="@android:color/white"
+                            android:layout_marginTop="5dp"/>
+
+                        <custom_font.TextViewMyriad
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hari_30"
+                            android:textColor="@android:color/white"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_horizontal"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/t4"
+                        android:background="@android:color/white"
+                        android:orientation="vertical">
+                        <custom_font.TextViewMyriad
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/harga_200k"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_horizontal"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@android:color/black"/>
+                        <custom_font.TextViewMyriad
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:text="@string/total_20"
+                            android:gravity="center_horizontal"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <custom_font.TextViewMyriad
+                    android:id="@+id/btn_lang_foto30"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aktifkan"
+                    android:gravity="center_horizontal"
+                    android:background="@color/blue_hx"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <custom_font.TextViewMyriad
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Bayar per soal"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grey_box_stroke"
+                android:padding="1dp">
+
+                <LinearLayout
+                    android:id="@+id/t5"
+                    android:layout_height="95dp"
+                    android:background="#0f3338"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical">
+
+                    <custom_font.TextViewMyriad
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/foto"
+                        android:textColor="@android:color/white"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:background="@drawable/round_transp"/>
+                    <custom_font.TextViewMyriad
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/jam_3"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/t5"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+                    <custom_font.TextViewMyriad
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/harga_4k_soal"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@android:color/black"/>
+                    <custom_font.TextViewMyriad
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:text="@string/isi_saldo_lgs"
+                        android:gravity="center_horizontal"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grey_box_stroke"
+                android:layout_marginLeft="10dp"
+                android:padding="1dp">
+
+                <LinearLayout
+                    android:id="@+id/t7"
+                    android:layout_height="95dp"
+                    android:background="#0f3338"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical">
+
+                    <custom_font.TextViewMyriad
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/video"
+                        android:textColor="@android:color/white"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:background="@drawable/round_transp"/>
+                    <custom_font.TextViewMyriad
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/jam_12"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/t7"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+                    <custom_font.TextViewMyriad
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/harga_6k_soal"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@android:color/black"/>
+                    <custom_font.TextViewMyriad
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:text="@string/isi_saldo_lgs"
+                        android:gravity="center_horizontal"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

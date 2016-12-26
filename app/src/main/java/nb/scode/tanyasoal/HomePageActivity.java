@@ -8,6 +8,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import custom_font.TextViewMyriad;
 import nb.scode.tanyasoal.baseAct.BaseActivity;
 
 public class HomePageActivity extends BaseActivity {
@@ -20,6 +21,22 @@ public class HomePageActivity extends BaseActivity {
         setContentView(R.layout.activity_home_page);
         FrameLayout btnTanyaTutor = (FrameLayout)findViewById(R.id.btn_tny_tutor);
         FrameLayout btnKomunitas = (FrameLayout)findViewById(R.id.btn_komunitas);
+        TextViewMyriad btnIsiSaldo = (TextViewMyriad)findViewById(R.id.btn_isiSaldo);
+        btnIsiSaldo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), IsiSaldoActivity.class);
+                startActivity(i);
+            }
+        });
+        TextViewMyriad btnPaketSedia = (TextViewMyriad)findViewById(R.id.btn_paketsedia);
+        btnPaketSedia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), PaketSediaActivity.class);
+                startActivity(i);
+            }
+        });
         btnTanyaTutor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

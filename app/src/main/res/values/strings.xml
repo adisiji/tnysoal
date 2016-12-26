@@ -3,6 +3,7 @@
     <string name="username">Username</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
+    <string name="ganti_pass">Ganti Password</string>
     <string name="banner_login">DAFTAR DAN NIKMATI\nFree Trial (48 jam)\nLAYANAN TANYA TUTOR </string>
 
     <!--daftar-->
@@ -20,6 +21,7 @@
     <string name="kd_promo">Kode Promo</string>
 
     <!--HomePage User-->
+    <string name="abc">ABC</string>
     <string name="welcome_dummy">Selamat Datang, ABC</string>
     <string name="welcome_dummy2">Saldo Anda: Rp 0\nLangganan Layanan 12 JAM FOTO berlaku s/d 30 DES 2016</string>
     <string name="welcome_dummy3">Lihat catatan penggunaan</string>
@@ -43,7 +45,8 @@
     <string name="gallery">Gallery</string>
     <string name="kirim">Kirim</string>
     <string name="batal">Batal</string>
-    
+    <string name="aktifkan">Aktifkan</string>
+
     <string name="fre_forum">Free Forum</string>
     <string name="artikel">Artikel</string>
     <string name="video">Video</string>
@@ -51,12 +54,33 @@
     <string name="xxx">\'?????</string>
     <string name="lainnya">Lainnya</string>
 
+    <string name="voucher">Voucher</string>
+    <string name="alfamart">Alfamart</string>
+    <string name="transfer_atm">Transfer ATM</string>
+    <string name="inet_banking">Internet Banking</string>
+    <string name="kartu_kredit">Kartu Kredit</string>
+
+    <string name="ubah_simpan">Ubah &amp; Simpan</string>
+    <string name="kembali">Kembali</string>
+
     <!--subjek-->
     <string name="matematika">Matematika</string>
     <string name="fisika">Fisika</string>
     <string name="kimia">Kimia</string>
     <string name="biologi">Biologi</string>
     <string name="bhs_inggris">B. Inggris</string>
+
+    <string name="foto">Foto</string>
+    <string name="jam_12">12 Jam</string>
+    <string name="jam_3">3 Jam</string>
+    <string name="hari_5"><b>5 Hari</b></string>
+    <string name="hari_30"><b>30 Hari</b></string>
+    <string name="harga_40k"><b><i>Harga: Rp 40.000,-</i></b></string>
+    <string name="total_20"><i>Total: <b>20 Soal</b> (10 soal/hari)</i></string>
+    <string name="harga_200k">Harga: Rp 200.000,-</string>
+    <string name="harga_4k_soal"><b><i>Harga: Rp4.000 per soal</i></b></string>
+    <string name="harga_6k_soal"><b><i>Harga: Rp6.000 per soal</i></b></string>
+    <string name="isi_saldo_lgs">Isi saldo dan langsung aktif</string>
 
     <string name="foto_12jam">Foto (12 jam)</string>
     <string name="foto_3jam_4k">Foto (3 jam)-Rp4.000/soal</string>
@@ -67,7 +91,8 @@
 
     <string-array name="jns_akademik_array">
         <item>International</item>
-        <item>Negeri</item>
+        <item>National</item>
+        <item>Others</item>
     </string-array>
 
     <string-array name="tkt_akademik_array">

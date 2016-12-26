@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_login"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <custom_font.TextViewApple
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_dummy"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <custom_font.TextViewApple
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_dummy2"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:gravity="center_horizontal"/>
+
+    <custom_font.TextViewMyriad
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_dummy3"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/holo_blue_dark"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+    <custom_font.TextViewMyriad
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="@string/nama_lkp"
+        android:gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <custom_font.MyEditText
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:letterSpacing="0.1"
+        android:drawablePadding="10dp"
+        android:textSize="13dp"
+        android:id="@+id/txt_ed_name"
+        android:background="@drawable/white_box_grey_stroke"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+
+        <custom_font.TextViewMyriad
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/namatampil"
+            android:letterSpacing="0.1"
+            android:textSize="13sp"
+            android:id="@+id/myTextView2" />
+
+        <custom_font.MyEditText
+            android:id="@+id/txt_ed_nama_tampil"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:letterSpacing="0.1"
+            android:background="@drawable/white_box_grey_stroke"
+            android:textSize="13sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp" >
+
+        <custom_font.TextViewMyriad
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/ganti_pass"
+            android:layout_weight="2" />
+
+        <custom_font.MyEditText
+            android:id="@+id/txt_ganti_pass"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/white_box_grey_stroke"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:inputType="textPassword"
+            android:textSize="13sp"
+            android:letterSpacing="0.1"
+            android:layout_weight="3"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+
+        <custom_font.TextViewMyriad
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="@string/konfirm_password"
+            android:id="@+id/myTextView4" />
+
+        <custom_font.MyEditText
+            android:id="@+id/txt_ed_confpass"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/white_box_grey_stroke"
+            android:paddingLeft="10dp"
+            android:inputType="textPassword"
+            android:textSize="13dp"
+            android:letterSpacing="0.1"
+            android:layout_weight="3"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+
+        <custom_font.TextViewMyriad
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/jns_akademik"
+            android:gravity="center_vertical"
+            android:layout_weight="2"/>
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/txt_create_jenakad"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textColor="@color/txt_black"
+            android:textSize="13sp"
+            android:background="@drawable/white_box_grey_stroke"
+            android:letterSpacing="0.1"
+            android:layout_weight="3"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+
+        <custom_font.TextViewMyriad
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/tkt_akad"
+            android:gravity="center_vertical"
+            android:layout_weight="2"
+            android:id="@+id/myTextView5" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spin_tingkat_akad"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textColor="@color/txt_black"
+            android:textSize="13sp"
+            android:letterSpacing="0.1"
+            android:layout_weight="3"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+        <custom_font.TextViewMyriad
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="2"
+            android:text="@string/sekolah"
+            android:gravity="center_vertical"/>
+        <custom_font.MyEditText
+            android:id="@+id/txt_ed_sekolah"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/white_box_grey_stroke"
+            android:letterSpacing="0.1"
+            android:textColorHint="@color/txt_hint_login"
+            android:textSize="13sp"
+            />
+
+    </LinearLayout>
+
+    <custom_font.TextViewApple
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/sec_question"
+        android:textSize="16sp"
+        android:id="@+id/myTextView6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+
+        <custom_font.TextViewMyriad
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="2"
+            android:text="@string/nama_lkp"
+            android:gravity="center_vertical" />
+
+        <custom_font.MyEditText
+            android:id="@+id/txt_nama_lkp"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/white_box_grey_stroke"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:letterSpacing="0.1"
+            android:textSize="13sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+
+        <custom_font.TextViewMyriad
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="2"
+            android:text="@string/no_hp"
+            android:gravity="center_vertical"/>
+
+        <custom_font.MyEditText
+            android:id="@+id/txt_no_hp"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/white_box_grey_stroke"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:letterSpacing="0.1"
+            android:textSize="13sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+
+        <custom_font.TextViewMyriad
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="2"
+            android:text="@string/tgl_lahir"
+            android:gravity="center_vertical"/>
+
+        <custom_font.MyEditText
+            android:id="@+id/ed_tgl_lhr"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/white_box_grey_stroke"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:letterSpacing="0.1"
+            android:textSize="13sp"
+            />
+
+    </LinearLayout>
+
+    <custom_font.TextViewMyriad
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/prim_red"
+        android:text="@string/ubah_simpan"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp" />
+
+    <custom_font.TextViewMyriad
+        android:id="@+id/btn_kembali"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/grey_bg_btn"
+        android:text="@string/kembali"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp" />
+</LinearLayout>
+</ScrollView>

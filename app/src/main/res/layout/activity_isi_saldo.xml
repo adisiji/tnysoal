@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_isi_saldo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nb.scode.tanyasoal.IsiSaldoActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/grad_login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <com.andexert.library.RippleView
+            android:id="@+id/btn_voucher"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#0f75ba"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <custom_font.TextViewMyriad
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/voucher"
+                android:padding="12dp"
+                android:textColor="@android:color/white"
+                android:gravity="center_horizontal"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/round_transp"/>
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/btn_alfamart"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#0f75ba"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <custom_font.TextViewMyriad
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/alfamart"
+                android:padding="12dp"
+                android:textColor="@android:color/white"
+                android:gravity="center_horizontal"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/round_transp"/>
+        </com.andexert.library.RippleView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp">
+
+        <com.andexert.library.RippleView
+            android:id="@+id/btn_trf_atm"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="#0f75ba"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <custom_font.TextViewMyriad
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/transfer_atm"
+                android:padding="12dp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:background="@drawable/round_transp"
+                android:id="@+id/textViewMyriad8"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"/>
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/btn_inetbank"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#0f75ba"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <custom_font.TextViewMyriad
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inet_banking"
+                android:padding="12dp"
+                android:textColor="@android:color/white"
+                android:gravity="center_horizontal"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/round_transp"/>
+        </com.andexert.library.RippleView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <com.andexert.library.RippleView
+            android:id="@+id/btn_kartu_kredit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#0f75ba"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_marginTop="5dp">
+
+            <custom_font.TextViewMyriad
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kartu_kredit"
+                android:padding="12dp"
+                android:textColor="@android:color/white"
+                android:gravity="center_horizontal"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/round_transp"/>
+        </com.andexert.library.RippleView>
+    </LinearLayout>
+
+</LinearLayout>

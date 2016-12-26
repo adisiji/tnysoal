@@ -29,18 +29,22 @@
                 android:text="@string/welcome_dummy3"
                 android:gravity="center_horizontal"
                 android:textColor="@android:color/holo_blue_dark"/>
-            <custom_font.TextViewMyriad
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="75dp"
-                android:layout_marginRight="75dp"
-                android:text="@string/isi_saldo"
-                android:padding="12dp"
-                android:background="@drawable/blue_box_stroke"
-                android:textColor="@android:color/white"
-                android:gravity="center_horizontal"/>
-            <custom_font.TextViewMyriad
+
+    <custom_font.TextViewMyriad
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:text="@string/isi_saldo"
+        android:padding="12dp"
+        android:background="@drawable/blue_box_stroke"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal"
+        android:id="@+id/btn_isiSaldo" />
+
+    <custom_font.TextViewMyriad
+                android:id="@+id/btn_paketsedia"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"

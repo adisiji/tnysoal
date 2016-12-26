@@ -8,6 +8,8 @@
     <color name="red_selected">#481319</color>
     <color name="red_unselected">#ec1a24</color>
     <color name="gray_bg">#E5E5E5</color>
+    <color name="blue_hx">#337abd</color>
+    <color name="grey_bg_btn">#58585a</color>
 
     <color name="txt_hint_login">#757575</color>
     <color name="bg_btn_banner">#f05a42</color>
