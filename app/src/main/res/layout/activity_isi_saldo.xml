@@ -21,7 +21,8 @@
             android:layout_height="wrap_content"
             android:background="#0f75ba"
             android:paddingTop="20dp"
-            android:paddingBottom="20dp">
+            android:paddingBottom="20dp"
+            app:rv_rippleDuration="200">
 
             <custom_font.TextViewMyriad
                 android:layout_width="match_parent"
@@ -42,7 +43,8 @@
             android:background="#0f75ba"
             android:layout_marginLeft="5dp"
             android:paddingTop="20dp"
-            android:paddingBottom="20dp">
+            android:paddingBottom="20dp"
+            app:rv_rippleDuration="200">
 
             <custom_font.TextViewMyriad
                 android:layout_width="match_parent"
@@ -70,7 +72,8 @@
             android:layout_height="match_parent"
             android:background="#0f75ba"
             android:paddingTop="20dp"
-            android:paddingBottom="20dp">
+            android:paddingBottom="20dp"
+            app:rv_rippleDuration="200">
 
             <custom_font.TextViewMyriad
                 android:layout_width="match_parent"
@@ -94,7 +97,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:paddingTop="20dp"
-            android:paddingBottom="20dp">
+            android:paddingBottom="20dp"
+            app:rv_rippleDuration="200">
 
             <custom_font.TextViewMyriad
                 android:layout_width="match_parent"
@@ -121,7 +125,8 @@
             android:background="#0f75ba"
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5dp"
+            app:rv_rippleDuration="200">
 
             <custom_font.TextViewMyriad
                 android:layout_width="match_parent"

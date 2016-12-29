@@ -62,7 +62,8 @@
     <string name="transfer_atm">Transfer ATM</string>
     <string name="inet_banking">Internet Banking</string>
     <string name="kartu_kredit">Kartu Kredit</string>
-
+    <string name="aktif_kd_voucher">Aktifkan kode voucher</string>
+    <string name="digit_kd_24"><i>(24 digit kode)</i></string>
     <string name="ubah_simpan">Ubah &amp; Simpan</string>
     <string name="kembali">Kembali</string>
 

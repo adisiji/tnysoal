@@ -31,7 +31,10 @@
         <activity android:name=".IsiSaldoActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".LupaPassActivity" />
-        <activity android:name=".GantiPassActivity"></activity>
+        <activity android:name=".GantiPassActivity" />
+        <activity android:name=".TrfAtmActivity" />
+        <activity android:name=".InetBankingActivity" />
+        <activity android:name=".IsiVoucherActivity"></activity>
     </application>
 
 </manifest>

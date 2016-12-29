@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_isi_voucher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_login"
+    tools:context="nb.scode.tanyasoal.IsiVoucherActivity">
+
+    <custom_font.TextViewApple
+        android:id="@+id/title_isi_voucher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/voucher"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <custom_font.TextViewMyriad
+        android:id="@+id/aktifateVoucher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aktif_kd_voucher"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/title_isi_voucher"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="14sp"
+        />
+
+    <custom_font.MyEditText
+        android:id="@+id/ed_kode_voucher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_box_grey_stroke"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toRightOf="@id/aktifateVoucher"
+        android:layout_toEndOf="@id/aktifateVoucher"
+        android:layout_below="@id/title_isi_voucher"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:ellipsize="end"
+        android:padding="5dp"/>
+
+    <custom_font.TextViewMyriad
+        android:id="@+id/kd244"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digit_kd_24"
+        android:layout_below="@+id/aktifateVoucher"
+        android:layout_alignLeft="@+id/aktifateVoucher"
+        android:layout_alignStart="@+id/aktifateVoucher"
+        android:textSize="12sp"/>
+
+    <custom_font.TextViewMyriad
+        android:id="@+id/btn_kirim_voucher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/prim_red"
+        android:layout_below="@id/kd244"
+        android:layout_marginTop="25dp"
+        android:text="@string/kirim"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:padding="7dp"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <custom_font.TextViewMyriad
+        android:id="@+id/btn_batal_voucher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_bg_btn"
+        android:layout_below="@id/btn_kirim_voucher"
+        android:layout_marginTop="10dp"
+        android:text="@string/batal"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:padding="7dp"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+</RelativeLayout>
