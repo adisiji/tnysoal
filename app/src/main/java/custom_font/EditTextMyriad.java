@@ -4,31 +4,30 @@ import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.EditText;
-import android.widget.TextView;
 
 /**
  * Created by one on 3/12/15.
  */
-public class MyEditText extends EditText{
+public class EditTextMyriad extends EditText{
 
-    public MyEditText(Context context, AttributeSet attrs, int defStyle) {
+    public EditTextMyriad(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init();
     }
 
-    public MyEditText(Context context, AttributeSet attrs) {
+    public EditTextMyriad(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public MyEditText(Context context) {
+    public EditTextMyriad(Context context) {
         super(context);
         init();
     }
 
     private void init() {
         if (!isInEditMode()) {
-            Typeface tf = FontCache.get("fonts/Lato-Regular.ttf", getContext());
+            Typeface tf = FontCache.get("fonts/MyriadPro-Regular.otf", getContext());
             setTypeface(tf);
         }
     }
