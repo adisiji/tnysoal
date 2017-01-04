@@ -14,7 +14,7 @@
         android:text="@string/lupa_sandi"
         android:layout_marginLeft="30dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:textSize="18sp"/>
 
     <LinearLayout
@@ -34,7 +34,7 @@
             android:text="@string/email"
             android:gravity="center_vertical" />
 
-        <custom_font.MyEditText
+        <custom_font.EditTextMyriad
             android:id="@+id/txt_lp_email"
             android:layout_weight="3"
             android:layout_width="0dp"
@@ -66,7 +66,7 @@
             android:text="@string/nama_lkp"
             android:gravity="center_vertical" />
 
-        <custom_font.MyEditText
+        <custom_font.EditTextMyriad
             android:id="@+id/txt_lp_nama_lkp"
             android:layout_weight="3"
             android:layout_width="0dp"
@@ -98,7 +98,7 @@
             android:text="@string/no_hp"
             android:gravity="center_vertical"/>
 
-        <custom_font.MyEditText
+        <custom_font.EditTextMyriad
             android:id="@+id/txt_lp_no_hp"
             android:layout_weight="3"
             android:layout_width="0dp"
@@ -130,7 +130,7 @@
             android:text="@string/tgl_lahir"
             android:gravity="center_vertical"/>
 
-        <custom_font.MyEditText
+        <custom_font.EditTextMyriad
             android:id="@+id/lp_tgl_lhr"
             android:layout_weight="3"
             android:layout_width="0dp"

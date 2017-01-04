@@ -32,7 +32,7 @@
         android:textSize="14sp"
         />
 
-    <custom_font.MyEditText
+    <custom_font.EditTextMyriad
         android:id="@+id/ed_kode_voucher"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

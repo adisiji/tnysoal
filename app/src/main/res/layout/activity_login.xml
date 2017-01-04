@@ -28,7 +28,7 @@
             android:id="@+id/logo"
             android:layout_width="300dp"
             android:layout_height="120dp"
-            android:src="@drawable/logo2"
+            android:src="@drawable/logo"
             android:layout_above="@+id/box_login"
             android:layout_below="@id/toolbar"
             android:layout_marginTop="30dp"
@@ -52,7 +52,7 @@
                 android:layout_gravity="center"
                 android:background="@drawable/roundwhite">
 
-                <custom_font.MyEditText
+                <custom_font.EditTextApple
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:background="#00000000"
@@ -79,7 +79,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp">
 
-                <custom_font.MyEditText
+                <custom_font.EditTextApple
                     android:id="@+id/myEditText2"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
@@ -101,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal" >
 
-                <custom_font.TextViewMyriad
+                <custom_font.TextViewApple
                     android:id="@+id/btn_login"
                     android:layout_width="0dp"
                     android:layout_height="25dp"
@@ -118,7 +118,7 @@
                     android:textSize="12sp"
                     android:layout_marginTop="10dp"/>
 
-                <custom_font.TextViewMyriad
+                <custom_font.TextViewApple
                     android:id="@+id/btn_daftar"
                     android:layout_width="0dp"
                     android:layout_height="25dp"

@@ -2,8 +2,8 @@ package nb.scode.tanyasoal;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import com.andexert.library.RippleView;
+import android.view.View;
+import android.widget.FrameLayout;
 
 import nb.scode.tanyasoal.baseAct.BaseActivity;
 
@@ -14,26 +14,26 @@ public class IsiSaldoActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_isi_saldo);
 
-        RippleView btnTrfBank = (RippleView)findViewById(R.id.btn_trf_atm);
-        RippleView btnInetBank = (RippleView)findViewById(R.id.btn_inetbank);
-        RippleView btnVoucher = (RippleView)findViewById(R.id.btn_voucher);
-        btnTrfBank.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+        FrameLayout btnTrfBank = (FrameLayout)findViewById(R.id.btn_trf_atm);
+        FrameLayout btnInetBank = (FrameLayout)findViewById(R.id.btn_inetbank);
+        FrameLayout btnVoucher = (FrameLayout)findViewById(R.id.btn_voucher);
+        btnTrfBank.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onComplete(RippleView rippleView) {
+            public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), TrfAtmActivity.class);
                 startActivity(i);
             }
         });
-        btnInetBank.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+        btnInetBank.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onComplete(RippleView rippleView) {
+            public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), InetBankingActivity.class);
                 startActivity(i);
             }
         });
-        btnVoucher.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+        btnVoucher.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onComplete(RippleView rippleView) {
+            public void onClick(View view) {
                 Intent i = new Intent (getApplicationContext(), IsiVoucherActivity.class);
                 startActivity(i);
             }

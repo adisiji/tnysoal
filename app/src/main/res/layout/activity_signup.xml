@@ -35,7 +35,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginEnd="10dp"/>
 
-                <custom_font.MyEditText
+                <custom_font.EditTextApple
                     android:layout_weight="3"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
@@ -70,7 +70,7 @@
                     android:textSize="13sp"
                     android:id="@+id/myTextView2" />
 
-                <custom_font.MyEditText
+                <custom_font.EditTextApple
                     android:id="@+id/txt_create_nama"
                     android:layout_weight="3"
                     android:layout_width="0dp"
@@ -101,7 +101,7 @@
                     android:layout_weight="2"
                     android:id="@+id/myTextView3" />
 
-                <custom_font.MyEditText
+                <custom_font.EditTextApple
                     android:id="@+id/txt_create_password"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
@@ -136,7 +136,7 @@
                     android:text="@string/konfirm_password"
                     android:id="@+id/myTextView4" />
 
-                <custom_font.MyEditText
+                <custom_font.EditTextApple
                     android:id="@+id/txt_create_confpass"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
@@ -222,7 +222,7 @@
                     android:layout_weight="2"
                     android:text="@string/sekolah"
                     android:gravity="center_vertical"/>
-                <custom_font.MyEditText
+                <custom_font.EditTextApple
                     android:id="@+id/txt_create_sekolah"
                     android:layout_weight="3"
                     android:layout_width="0dp"
@@ -253,7 +253,7 @@
                     android:text="@string/kd_promo"
                     android:gravity="center_vertical"/>
 
-                <custom_font.MyEditText
+                <custom_font.EditTextApple
                     android:id="@+id/txt_kd_promo"
                     android:layout_weight="2"
                     android:layout_width="0dp"
@@ -294,7 +294,7 @@
                     android:text="@string/nama_lkp"
                     android:gravity="center_vertical" />
 
-                <custom_font.MyEditText
+                <custom_font.EditTextApple
                     android:id="@+id/txt_nama_lkp"
                     android:layout_weight="3"
                     android:layout_width="0dp"
@@ -326,7 +326,7 @@
                     android:text="@string/no_hp"
                     android:gravity="center_vertical"/>
 
-                <custom_font.MyEditText
+                <custom_font.EditTextApple
                     android:id="@+id/txt_no_hp"
                     android:layout_weight="3"
                     android:layout_width="0dp"
@@ -358,7 +358,7 @@
                     android:text="@string/tgl_lahir"
                     android:gravity="center_vertical"/>
 
-                <custom_font.MyEditText
+                <custom_font.EditTextApple
                     android:id="@+id/daftar_tgl_lhr"
                     android:layout_weight="3"
                     android:layout_width="0dp"

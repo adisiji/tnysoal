@@ -5,13 +5,13 @@ import android.view.View;
 
 import com.jaredrummler.materialspinner.MaterialSpinner;
 
-import custom_font.MyEditText;
+import custom_font.EditTextMyriad;
 import custom_font.TextViewMyriad;
 import nb.scode.tanyasoal.baseAct.BaseActivity;
 
 public class ProfileActivity extends BaseActivity {
 
-    private MyEditText namalkp,namatmp,gantipass,konfpass, sekolah, namalkp2, hp, tlh;
+    private EditTextMyriad namalkp,namatmp,gantipass,konfpass, sekolah, namalkp2, hp, tlh;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,14 +24,14 @@ public class ProfileActivity extends BaseActivity {
         MaterialSpinner spinTktAkad = (MaterialSpinner) findViewById(R.id.spin_tingkat_akad);
         spinTktAkad.setItems(getResources().getStringArray(R.array.tkt_akademik_array));
         final String dummyText = getResources().getString(R.string.abc);
-        namalkp = (MyEditText)findViewById(R.id.txt_ed_name);
-        namatmp = (MyEditText)findViewById(R.id.txt_ed_nama_tampil);
-        gantipass = (MyEditText) findViewById(R.id.txt_ganti_pass);
-        konfpass = (MyEditText)findViewById(R.id.txt_ed_confpass);
-        sekolah = (MyEditText)findViewById(R.id.txt_ed_sekolah);
-        namalkp2 = (MyEditText)findViewById(R.id.txt_nama_lkp);
-        hp = (MyEditText)findViewById(R.id.txt_no_hp);
-        tlh = (MyEditText)findViewById(R.id.ed_tgl_lhr);
+        namalkp = (EditTextMyriad)findViewById(R.id.txt_ed_name);
+        namatmp = (EditTextMyriad)findViewById(R.id.txt_ed_nama_tampil);
+        gantipass = (EditTextMyriad) findViewById(R.id.txt_ganti_pass);
+        konfpass = (EditTextMyriad)findViewById(R.id.txt_ed_confpass);
+        sekolah = (EditTextMyriad)findViewById(R.id.txt_ed_sekolah);
+        namalkp2 = (EditTextMyriad)findViewById(R.id.txt_nama_lkp);
+        hp = (EditTextMyriad)findViewById(R.id.txt_no_hp);
+        tlh = (EditTextMyriad)findViewById(R.id.ed_tgl_lhr);
         setDummyText(dummyText);
 
         TextViewMyriad kembali = (TextViewMyriad)findViewById(R.id.btn_kembali);

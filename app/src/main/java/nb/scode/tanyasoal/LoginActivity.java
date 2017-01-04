@@ -13,7 +13,7 @@ import nb.scode.tanyasoal.baseAct.FragmentDrawer;
 
 public class LoginActivity extends AppCompatActivity implements FragmentDrawer.FragmentDrawerListener {
 
-    private TextViewMyriad create;
+    private TextViewApple create;
     private FragmentDrawer drawerFragment;
 
     @Override
@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity implements FragmentDrawer.F
         drawerFragment.setUp(R.id.fragment_navigation_drawer, (DrawerLayout) findViewById(R.id.drawer_layout), mToolbar);
         drawerFragment.setDrawerListener(this);
 
-        create = (TextViewMyriad)findViewById(R.id.btn_daftar);
+        create = (TextViewApple)findViewById(R.id.btn_daftar);
 
         create.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,10 +41,10 @@ public class LoginActivity extends AppCompatActivity implements FragmentDrawer.F
                 startActivity(it);
             }
         });
-        final MyEditText usr = (MyEditText)findViewById(R.id.myEditText);
-        final MyEditText pass = (MyEditText)findViewById(R.id.myEditText2);
+        final EditTextApple usr = (EditTextApple)findViewById(R.id.myEditText);
+        final EditTextApple pass = (EditTextApple)findViewById(R.id.myEditText2);
 
-        TextViewMyriad btnLogin = (TextViewMyriad)findViewById(R.id.btn_login);
+        TextViewApple btnLogin = (TextViewApple)findViewById(R.id.btn_login);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,7 +57,9 @@ public class LoginActivity extends AppCompatActivity implements FragmentDrawer.F
                     finish();
                 }
                 else if(mail.equals("tutor") && pss.equals("tutor")) {
-                    Log.d("yoo","you're a tutor");
+                    Intent iu = new Intent(LoginActivity.this, AvailQuestionActivity.class);
+                    startActivity(iu);
+                    finish();
                 }
                 else {
                     Log.d("Error","Not authorized user: "+mail+" pass: "+pss);

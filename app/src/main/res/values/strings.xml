@@ -67,6 +67,16 @@
     <string name="ubah_simpan">Ubah &amp; Simpan</string>
     <string name="kembali">Kembali</string>
 
+    <string name="avail_question">Available Question</string>
+    <string name="subjek">Subjek</string>
+    <string name="level">Level</string>
+    <string name="nama">Nama</string>
+    <string name="tutor">Tutor</string>
+    <string name="sisa_waktu">Sisa Waktu</string>
+    <string name="soal">Soal</string>
+    <string name="periode">Periode</string>
+    <string name="jawaban">Jawaban</string>
+
     <!--subjek-->
     <string name="matematika">Matematika</string>
     <string name="fisika">Fisika</string>

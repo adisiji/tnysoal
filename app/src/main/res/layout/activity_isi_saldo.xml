@@ -15,14 +15,13 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal">
 
-        <com.andexert.library.RippleView
+        <FrameLayout
             android:id="@+id/btn_voucher"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:background="#0f75ba"
             android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            app:rv_rippleDuration="200">
+            android:paddingBottom="20dp">
 
             <custom_font.TextViewMyriad
                 android:layout_width="match_parent"
@@ -34,17 +33,16 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginLeft="15dp"
                 android:background="@drawable/round_transp"/>
-        </com.andexert.library.RippleView>
+        </FrameLayout>
 
-        <com.andexert.library.RippleView
+        <FrameLayout
             android:id="@+id/btn_alfamart"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:background="#0f75ba"
             android:layout_marginLeft="5dp"
             android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            app:rv_rippleDuration="200">
+            android:paddingBottom="20dp">
 
             <custom_font.TextViewMyriad
                 android:layout_width="match_parent"
@@ -56,7 +54,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginLeft="15dp"
                 android:background="@drawable/round_transp"/>
-        </com.andexert.library.RippleView>
+        </FrameLayout>
 
     </LinearLayout>
 
@@ -66,18 +64,17 @@
         android:gravity="center_horizontal"
         android:layout_marginTop="5dp">
 
-        <com.andexert.library.RippleView
+        <FrameLayout
             android:id="@+id/btn_trf_atm"
             android:layout_width="150dp"
             android:layout_height="match_parent"
             android:background="#0f75ba"
             android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            app:rv_rippleDuration="200">
+            android:paddingBottom="20dp">
 
             <custom_font.TextViewMyriad
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:text="@string/transfer_atm"
                 android:padding="12dp"
                 android:textColor="@android:color/white"
@@ -85,11 +82,10 @@
                 android:background="@drawable/round_transp"
                 android:id="@+id/textViewMyriad8"
                 android:layout_marginRight="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_centerVertical="true"/>
-        </com.andexert.library.RippleView>
+                android:layout_marginLeft="15dp"/>
+        </FrameLayout>
 
-        <com.andexert.library.RippleView
+        <FrameLayout
             android:id="@+id/btn_inetbank"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
@@ -97,8 +93,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            app:rv_rippleDuration="200">
+            android:paddingBottom="20dp">
 
             <custom_font.TextViewMyriad
                 android:layout_width="match_parent"
@@ -110,7 +105,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginLeft="15dp"
                 android:background="@drawable/round_transp"/>
-        </com.andexert.library.RippleView>
+        </FrameLayout>
 
     </LinearLayout>
     <LinearLayout
@@ -118,17 +113,17 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal">
 
-        <com.andexert.library.RippleView
+        <FrameLayout
             android:id="@+id/btn_kartu_kredit"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:background="#0f75ba"
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
-            android:layout_marginTop="5dp"
-            app:rv_rippleDuration="200">
+            android:layout_marginTop="5dp">
 
             <custom_font.TextViewMyriad
+                
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/kartu_kredit"
@@ -138,7 +133,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginLeft="15dp"
                 android:background="@drawable/round_transp"/>
-        </com.andexert.library.RippleView>
+        </FrameLayout>
     </LinearLayout>
 
 </LinearLayout>

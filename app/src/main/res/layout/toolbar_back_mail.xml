@@ -13,7 +13,7 @@
         android:orientation="horizontal">
 
         <View
-            android:layout_width="2dp"
+            android:layout_width="1dp"
             android:layout_height="fill_parent"
             android:background="@android:color/white"/>
 
@@ -39,12 +39,14 @@
             android:src="@drawable/ic_account_circle_white_48dp"
             android:layout_margin="10dp"
             android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"/>
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
 
         <View
             android:id="@+id/line_right"
             android:layout_toLeftOf="@id/pict_profile_toolbar"
-            android:layout_width="2dp"
+            android:layout_toStartOf="@id/pict_profile_toolbar"
+            android:layout_width="1dp"
             android:layout_height="fill_parent"
             android:background="@android:color/white" />
 
@@ -53,6 +55,7 @@
             android:layout_width="50dp"
             android:layout_height="match_parent"
             android:layout_toLeftOf="@id/line_right"
+            android:layout_toStartOf="@id/line_right"
             android:src="@drawable/ic_email_white_48dp"
             android:layout_margin="10dp"/>
 

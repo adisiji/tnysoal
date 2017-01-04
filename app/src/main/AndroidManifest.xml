@@ -34,7 +34,8 @@
         <activity android:name=".GantiPassActivity" />
         <activity android:name=".TrfAtmActivity" />
         <activity android:name=".InetBankingActivity" />
-        <activity android:name=".IsiVoucherActivity"></activity>
+        <activity android:name=".IsiVoucherActivity" />
+        <activity android:name=".AvailQuestionActivity"></activity>
     </application>
 
 </manifest>

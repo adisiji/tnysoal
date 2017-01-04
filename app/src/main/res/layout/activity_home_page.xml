@@ -16,7 +16,7 @@
         android:layout_marginTop="15dp"
         android:id="@+id/textViewMyriad7" />
 
-    <custom_font.TextViewMyriad
+    <custom_font.TextViewApple
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
