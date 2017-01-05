@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_log_user"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="nb.scode.tanyasoal.LogUserActivity">
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_login"
+    android:layout_alignParentTop="true"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <custom_font.TextViewApple
+        android:id="@+id/title_cat_aktivitas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cat_aktivitas"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"/>
+    <TableLayout
+        android:id="@+id/table_cat_aktivitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal">
+        <TableRow
+            android:layout_height="wrap_content"
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent">
+            <custom_font.TextViewMyriad
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cellborder"
+                android:id="@+id/tbl_ttl_subjek"
+                android:text="@string/tgl_penggunaan"
+                android:gravity="center"
+                android:padding="3dp"/>
+            <custom_font.TextViewMyriad
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cellborder"
+                android:id="@+id/tbl_ttl_aksi"
+                android:text="@string/aksi"
+                android:gravity="center"
+                android:padding="3dp"/>
+            <custom_font.TextViewMyriad
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cellborder"
+                android:id="@+id/tbl_ttl_saldo_ptg"
+                android:text="@string/saldo_terpotong"
+                android:gravity="center"
+                android:padding="3dp"/>
+        </TableRow>
+    </TableLayout>
+    </LinearLayout>
+</ScrollView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/prim_red"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

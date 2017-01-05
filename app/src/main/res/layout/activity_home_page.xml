@@ -24,6 +24,7 @@
                 android:text="@string/welcome_dummy2"
                 android:gravity="center_horizontal"/>
             <custom_font.TextViewMyriad
+                android:id="@+id/cat_aktivitas_home"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/welcome_dummy3"

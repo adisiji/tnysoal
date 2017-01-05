@@ -1,5 +1,6 @@
 package nb.scode.tanyasoal;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -12,6 +13,7 @@ import nb.scode.tanyasoal.baseAct.BaseActivity;
 public class ProfileActivity extends BaseActivity {
 
     private EditTextMyriad namalkp,namatmp,gantipass,konfpass, sekolah, namalkp2, hp, tlh;
+    private TextViewMyriad cat_guna;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,14 @@ public class ProfileActivity extends BaseActivity {
         namalkp2 = (EditTextMyriad)findViewById(R.id.txt_nama_lkp);
         hp = (EditTextMyriad)findViewById(R.id.txt_no_hp);
         tlh = (EditTextMyriad)findViewById(R.id.ed_tgl_lhr);
+        cat_guna = (TextViewMyriad)findViewById(R.id.cat_aktivitas_profile);
+        cat_guna.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), LogUserActivity.class);
+                startActivity(i);
+            }
+        });
         setDummyText(dummyText);
 
         TextViewMyriad kembali = (TextViewMyriad)findViewById(R.id.btn_kembali);

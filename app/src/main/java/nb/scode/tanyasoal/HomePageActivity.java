@@ -22,6 +22,14 @@ public class HomePageActivity extends BaseActivity {
         FrameLayout btnTanyaTutor = (FrameLayout)findViewById(R.id.btn_tny_tutor);
         FrameLayout btnKomunitas = (FrameLayout)findViewById(R.id.btn_komunitas);
         TextViewMyriad btnIsiSaldo = (TextViewMyriad)findViewById(R.id.btn_isiSaldo);
+        TextViewMyriad lht_cat_user = (TextViewMyriad)findViewById(R.id.cat_aktivitas_home);
+        lht_cat_user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), LogUserActivity.class);
+                startActivity(i);
+            }
+        });
         btnIsiSaldo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

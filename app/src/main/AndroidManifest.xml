@@ -35,7 +35,8 @@
         <activity android:name=".TrfAtmActivity" />
         <activity android:name=".InetBankingActivity" />
         <activity android:name=".IsiVoucherActivity" />
-        <activity android:name=".AvailQuestionActivity"></activity>
+        <activity android:name=".AvailQuestionActivity" />
+        <activity android:name=".LogUserActivity"></activity>
     </application>
 
 </manifest>

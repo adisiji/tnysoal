@@ -77,6 +77,11 @@
     <string name="periode">Periode</string>
     <string name="jawaban">Jawaban</string>
 
+    <string name="cat_aktivitas"><b><i>Catatan Aktivitas</i></b></string>
+    <string name="tgl_penggunaan">Tanggal penggunaan</string>
+    <string name="aksi">Aksi</string>
+    <string name="saldo_terpotong">Saldo Terpotong</string>
+
     <!--subjek-->
     <string name="matematika">Matematika</string>
     <string name="fisika">Fisika</string>
