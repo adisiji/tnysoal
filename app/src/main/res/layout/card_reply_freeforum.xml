@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <custom_font.EditTextMyriad
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/grey_box_stroke"
+        android:id="@+id/ed_child_reply"
+        android:text="Isi reply"
+        android:padding="5dp"/>
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:ms_background_color="@color/soft_blue_hx"
+        app:ms_text_color="@android:color/white"
+        android:id="@+id/materialSpinner"
+        android:layout_alignBaseline="@+id/ed_child_reply"
+        android:layout_alignBottom="@+id/ed_child_reply"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

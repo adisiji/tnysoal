@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <custom_font.TextViewMyriad
+        android:id="@+id/content_freeforum"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/grey_box_stroke"
+        android:padding="5dp"
+        android:text="Isi pertanyaan"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/content_freeforum"
+        android:layout_alignRight="@+id/content_freeforum"
+        android:layout_alignEnd="@+id/content_freeforum"
+        app:ms_background_color="@color/soft_blue_hx"
+        app:ms_text_color="@android:color/white"/>
+
+    <FrameLayout
+        android:id="@+id/btn_tanya_tutor"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:background="@color/prim_red"
+        android:layout_below="@+id/content_freeforum"
+        android:layout_alignLeft="@+id/content_freeforum"
+        android:layout_alignStart="@+id/content_freeforum"
+        android:layout_marginTop="5dp">
+        <custom_font.TextViewMyriad
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tanya Tutor"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/round_transp"/>
+    </FrameLayout>
+
+    <custom_font.EditTextMyriad
+        android:id="@+id/ed_jawab"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:hint="@string/jawab_sini"
+        android:layout_alignTop="@+id/btn_tanya_tutor"
+        android:layout_alignRight="@+id/content_freeforum"
+        android:layout_alignEnd="@+id/content_freeforum"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/white_box_grey_stroke"
+        />
+
+    <custom_font.TextViewMyriad
+        android:id="@+id/btn_reply_freeforum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reply"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/prim_red"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/ed_jawab"
+        android:layout_alignLeft="@+id/ed_jawab"
+        android:layout_alignStart="@+id/ed_jawab" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_reply_freeforum"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/btn_reply_freeforum"
+        android:layout_alignStart="@+id/btn_reply_freeforum"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/btn_reply_freeforum" >
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

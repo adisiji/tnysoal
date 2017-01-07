@@ -48,7 +48,7 @@ public class HomePageActivity extends BaseActivity {
         btnTanyaTutor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),TanyaTutorActivity.class);
+                Intent i = new Intent(getApplicationContext(),LayananTanyaTutorAct.class);
                 startActivity(i);
             }
         });

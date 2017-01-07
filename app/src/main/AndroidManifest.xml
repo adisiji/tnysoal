@@ -36,7 +36,9 @@
         <activity android:name=".InetBankingActivity" />
         <activity android:name=".IsiVoucherActivity" />
         <activity android:name=".AvailQuestionActivity" />
-        <activity android:name=".LogUserActivity"></activity>
+        <activity android:name=".LogUserActivity" />
+        <activity android:name=".LayananTanyaTutorAct" />
+        <activity android:name=".FreeForumActivity"></activity>
     </application>
 
 </manifest>
