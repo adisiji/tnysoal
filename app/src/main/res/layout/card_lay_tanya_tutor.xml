@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="150dp"
+    android:layout_height="200dp"
+    android:background="@drawable/white_box_grey_stroke">
+    <LinearLayout
+        android:id="@+id/card_rating_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/soft_blue_box">
+        <custom_font.TextViewMyriad
+            android:id="@+id/ttl_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:text="Rating"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"/>
+        <RatingBar
+            android:id="@+id/rating_tanya"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:paddingTop="15dp"
+            android:numStars="5"
+            android:stepSize="1"
+            android:rating="5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row2_card_tanya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/card_rating_bar"
+        android:orientation="horizontal"
+        android:background="@drawable/soft_blue_box"
+        android:padding="5dp"
+        android:weightSum="100">
+        <custom_font.TextViewMyriad
+            android:id="@+id/jawab_oleh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="@string/jawab_oleh"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="40"/>
+        <custom_font.TextViewMyriad
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="XYZ"
+            android:textColor="@android:color/white"
+            android:layout_weight="30"
+            />
+        <custom_font.TextViewMyriad
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="1 jam lalu"
+            android:gravity="end"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="30"
+            />
+    </LinearLayout>
+    
+    <custom_font.TextViewMyriad
+        android:id="@+id/isi_soal_layanan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/row2_card_tanya"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"/>
+
+</RelativeLayout>

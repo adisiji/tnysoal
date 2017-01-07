@@ -82,6 +82,11 @@
     <string name="aksi">Aksi</string>
     <string name="saldo_terpotong">Saldo Terpotong</string>
 
+    <string name="jawab_oleh">dijawab oleh</string>
+
+    <string name="jawab_sini"><i>Jawab sini</i></string>
+    <string name="tanya_soal_baru">Tanya Soal baru</string>
+
     <!--subjek-->
     <string name="matematika">Matematika</string>
     <string name="fisika">Fisika</string>
