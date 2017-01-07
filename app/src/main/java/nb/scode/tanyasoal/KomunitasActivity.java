@@ -2,8 +2,8 @@ package nb.scode.tanyasoal;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import com.andexert.library.RippleView;
+import android.view.View;
+import android.widget.FrameLayout;
 
 import nb.scode.tanyasoal.baseAct.BaseActivity;
 
@@ -13,10 +13,10 @@ public class KomunitasActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_komunitas);
-        RippleView btnFreeForum = (RippleView)findViewById(R.id.btn_fforum);
-        btnFreeForum.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+        FrameLayout btnFreeForum = (FrameLayout) findViewById(R.id.btn_fforum);
+        btnFreeForum.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onComplete(RippleView rippleView) {
+            public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), FreeForumActivity.class);
                 startActivity(i);
             }

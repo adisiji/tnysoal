@@ -11,7 +11,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.andexert.library.RippleView
+            <FrameLayout
                 android:id="@+id/btn_fforum"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -21,7 +21,7 @@
                 android:background="#0f75ba"
                 android:paddingTop="30dp"
                 android:paddingBottom="30dp"
-                rv_centered="true" >
+                  >
 
                 <custom_font.TextViewMyriad
                     android:layout_width="match_parent"
@@ -35,9 +35,9 @@
                     android:background="@drawable/round_transp"
                     android:id="@+id/textViewMyriad" />
 
-            </com.andexert.library.RippleView>
+            </FrameLayout>
 
-            <com.andexert.library.RippleView
+            <FrameLayout
                 android:id="@+id/btn_artikel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
                 android:background="#0f75ba"
                 android:paddingTop="30dp"
                 android:paddingBottom="30dp"
-                app:rv_centered="true">
+                 >
 
                 <custom_font.TextViewMyriad
                     android:layout_width="match_parent"
@@ -60,9 +60,9 @@
                     android:layout_marginLeft="40dp"
                     android:background="@drawable/round_transp"
                     android:id="@+id/textViewMyriad2" />
-            </com.andexert.library.RippleView>
+            </FrameLayout>
 
-            <com.andexert.library.RippleView
+            <FrameLayout
                 android:id="@+id/btn_video"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
                 android:background="#0f75ba"
                 android:paddingTop="30dp"
                 android:paddingBottom="30dp"
-                app:rv_centered="true">
+                 >
 
                 <custom_font.TextViewMyriad
                     android:layout_width="match_parent"
@@ -85,9 +85,9 @@
                     android:layout_marginLeft="40dp"
                     android:background="@drawable/round_transp"
                     android:id="@+id/textViewMyriad3" />
-            </com.andexert.library.RippleView>
+            </FrameLayout>
 
-            <com.andexert.library.RippleView
+            <FrameLayout
                 android:id="@+id/btn_soal_menarik"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
                 android:background="#0f75ba"
                 android:paddingTop="30dp"
                 android:paddingBottom="30dp"
-                app:rv_centered="true">
+                 >
 
                 <custom_font.TextViewMyriad
                     android:layout_width="match_parent"
@@ -110,9 +110,9 @@
                     android:layout_marginLeft="40dp"
                     android:background="@drawable/round_transp"
                     android:id="@+id/textViewMyriad4" />
-            </com.andexert.library.RippleView>
+            </FrameLayout>
 
-            <com.andexert.library.RippleView
+            <FrameLayout
                 android:id="@+id/btn_dunno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -122,7 +122,7 @@
                 android:background="#0f75ba"
                 android:paddingTop="30dp"
                 android:paddingBottom="30dp"
-                app:rv_centered="true">
+                 >
 
                 <custom_font.TextViewMyriad
                     android:layout_width="match_parent"
@@ -135,9 +135,9 @@
                     android:layout_marginLeft="40dp"
                     android:background="@drawable/round_transp"
                     android:id="@+id/textViewMyriad5" />
-            </com.andexert.library.RippleView>
+            </FrameLayout>
 
-            <com.andexert.library.RippleView
+            <FrameLayout
                 android:id="@+id/btn_lainnya"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -148,7 +148,7 @@
                 android:background="#0f75ba"
                 android:paddingTop="30dp"
                 android:paddingBottom="30dp"
-                app:rv_centered="true">
+                 >
 
                 <custom_font.TextViewMyriad
                     android:layout_width="match_parent"
@@ -161,7 +161,7 @@
                     android:layout_marginLeft="40dp"
                     android:background="@drawable/round_transp"
                     android:id="@+id/textViewMyriad6" />
-            </com.andexert.library.RippleView>
+            </FrameLayout>
 
         </LinearLayout>
 
