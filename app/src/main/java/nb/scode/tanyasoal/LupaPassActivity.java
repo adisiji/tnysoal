@@ -6,9 +6,9 @@ import android.view.View;
 
 import custom_font.EditTextMyriad;
 import custom_font.TextViewMyriad;
-import nb.scode.tanyasoal.baseAct.BaseActivity;
+import nb.scode.tanyasoal.baseAct.BaseFirstAct;
 
-public class LupaPassActivity extends BaseActivity {
+public class LupaPassActivity extends BaseFirstAct {
 
     private EditTextMyriad email, namalkp, hp, tlh;
 

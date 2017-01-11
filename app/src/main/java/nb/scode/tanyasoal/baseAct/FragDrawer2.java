@@ -18,7 +18,7 @@ import android.view.inputmethod.InputMethodManager;
 
 import nb.scode.tanyasoal.R;
 
-public class FragmentDrawer extends Fragment{
+public class FragDrawer2 extends Fragment{
 
     private static String TAG = FragmentDrawer.class.getSimpleName();
 
@@ -63,7 +63,7 @@ public class FragmentDrawer extends Fragment{
             Color.WHITE,
             Color.WHITE
     };
-    public FragmentDrawer() {
+    public FragDrawer2() {
 
     }
 
@@ -78,7 +78,7 @@ public class FragmentDrawer extends Fragment{
 
         // drawer labels
 
-        navTitles = getActivity().getResources().getStringArray(R.array.navDrawerItems2);
+        navTitles = getActivity().getResources().getStringArray(R.array.navDrawerItems);
         //navIcons = getActivity().getResources().obtainTypedArray(R.array.navDrawerIcons);
     }
 

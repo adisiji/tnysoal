@@ -2,10 +2,16 @@ package nb.scode.tanyasoal.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
 
 import java.util.List;
 
@@ -21,22 +27,29 @@ import nb.scode.tanyasoal.models.reply;
 public class RootFreeForumAdapter extends RecyclerView.Adapter<RootFreeForumAdapter.MyViewHolder> {
 
     private List<question> questionList;
-    private List<reply> replyList;
+    private ReplyFreeForumAdapter adapterReply;
     private Context context;
+    private ActionRoot actionRoot;
+
+    public void setActionRoot(ActionRoot actionRoot){
+        this.actionRoot = actionRoot;
+    }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextViewMyriad content;
         public RecyclerView rv_reply;
+        public ImageView imageView;
 
         public MyViewHolder(View view) {
             super(view);
             content = (TextViewMyriad) view.findViewById(R.id.content_freeforum);
             rv_reply = (RecyclerView)view.findViewById(R.id.rv_reply_freeforum);
+            imageView = (ImageView)view.findViewById(R.id.dropdown_root_forum);
         }
     }
 
-    public RootFreeForumAdapter(Context context, List<question> questions, List<reply> replies){
-        this.replyList = replies;
+    public RootFreeForumAdapter(Context context, List<question> questions, ReplyFreeForumAdapter adapter){
+        this.adapterReply = adapter;
         this.questionList = questions;
         this.context = context;
     }
@@ -50,17 +63,31 @@ public class RootFreeForumAdapter extends RecyclerView.Adapter<RootFreeForumAdap
     }
 
     @Override
-    public void onBindViewHolder(MyViewHolder holder, int position) {
-        ReplyFreeForumAdapter adapter = new ReplyFreeForumAdapter(replyList);
-        holder.rv_reply.setAdapter(adapter);
+    public void onBindViewHolder(MyViewHolder holder, final int position) {
         LinearLayoutManager llm = new LinearLayoutManager(context);
         holder.rv_reply.setLayoutManager(llm);
+        holder.rv_reply.setAdapter(adapterReply);
         question q = questionList.get(position);
         holder.content.setText(q.getSoal());
+        Glide.with(context).load(R.drawable.ic_arrow_drop_down_white_24dp)
+                .asBitmap()
+                .into(holder.imageView);
+        holder.imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                actionRoot.onClickDrop(position, view);
+            }
+        });
+
     }
 
     @Override
     public int getItemCount() {
         return questionList.size();
     }
+
+    public interface ActionRoot{
+        void onClickDrop(int position, View view);
+    }
+
 }

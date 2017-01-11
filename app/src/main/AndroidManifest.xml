@@ -38,7 +38,9 @@
         <activity android:name=".AvailQuestionActivity" />
         <activity android:name=".LogUserActivity" />
         <activity android:name=".LayananTanyaTutorAct" />
-        <activity android:name=".FreeForumActivity"></activity>
+        <activity android:name=".FreeForumActivity" />
+        <activity android:name=".ChatroomTanyaTutorActivity" />
+        <activity android:name=".ChatroomTutorActivity"></activity>
     </application>
 
 </manifest>

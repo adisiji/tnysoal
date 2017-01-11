@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <custom_font.TextViewMyriad
         android:id="@+id/content_freeforum"
@@ -16,14 +19,18 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp" />
 
-    <com.jaredrummler.materialspinner.MaterialSpinner
+    <ImageView
+        android:id="@+id/dropdown_root_forum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:scaleType="center"
         android:layout_alignBottom="@+id/content_freeforum"
         android:layout_alignRight="@+id/content_freeforum"
         android:layout_alignEnd="@+id/content_freeforum"
-        app:ms_background_color="@color/soft_blue_hx"
-        app:ms_text_color="@android:color/white"/>
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:background="@color/soft_blue_hx"
+        android:textColor="@android:color/white"/>
 
     <FrameLayout
         android:id="@+id/btn_tanya_tutor"
@@ -81,12 +88,14 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_reply_freeforum"
         android:layout_width="150dp"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btn_reply_freeforum"
         android:layout_alignStart="@+id/btn_reply_freeforum"
         android:layout_marginTop="5dp"
-        android:layout_below="@id/btn_reply_freeforum" >
+        android:layout_below="@id/btn_reply_freeforum"
+        android:scrollbars="vertical">
 
     </android.support.v7.widget.RecyclerView>
 
 </RelativeLayout>
+</ScrollView>

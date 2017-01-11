@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.RatingBar;
+import android.widget.RelativeLayout;
 
 import custom_font.TextViewMyriad;
 import nb.scode.tanyasoal.R;
@@ -20,11 +21,16 @@ public class LayTnyTutorAdapter extends BaseAdapter {
     private Context mContext;
     private question[] questionz;
     private LayoutInflater inflater;
+    private ActionCard actionCard;
 
     public LayTnyTutorAdapter(Context context, question[] atmCards) {
         this.mContext = context;
         this.questionz = atmCards;
         inflater = LayoutInflater.from(context);
+    }
+
+    public void SetActionCard(ActionCard actionCard){
+        this.actionCard = actionCard;
     }
 
     @Override
@@ -43,7 +49,7 @@ public class LayTnyTutorAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
 
         question card = questionz[position];
         if (convertView == null) {
@@ -54,8 +60,19 @@ public class LayTnyTutorAdapter extends BaseAdapter {
         RatingBar ratingBar = (RatingBar)convertView.findViewById(R.id.rating_tanya);
         ratingBar.setRating(4);
         soal.setText(card.getSoal());
+        RelativeLayout rl = (RelativeLayout)convertView.findViewById(R.id.rl_root_laytanya);
+        rl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                actionCard.onClick(position);
+            }
+        });
 
         return convertView;
+    }
+
+    public interface ActionCard {
+        void onClick(int position);
     }
 
 }

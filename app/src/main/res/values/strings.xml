@@ -87,6 +87,23 @@
     <string name="jawab_sini"><i>Jawab sini</i></string>
     <string name="tanya_soal_baru">Tanya Soal baru</string>
 
+    <string name="dummy_jawab_dengan">(Jawab dengan Foto - 3 Jam)</string>
+    <string name="dummy_sma3"><i>ABC, SMA 3, 12 jam yang lalu</i></string>
+    <string name="edit">Edit</string>
+    <string name="ketik_sini"><i>Ketik sini</i></string>
+
+    <string name="berikut_jawab">Berikut jawabannya</string>
+    <string name="xyz_6jam_lalu"><i>XYZ - Tutor, 6 jam yang lalu</i></string>
+    <string name="choose_file">Choose file</string>
+    <string name="selesai_jwb_soal">Selesai menjawab soal</string>
+    <string name="jumlah_soal_jawab">Jumlah soal yang dijawab: </string>
+    
+    <string name="jml_soal_ditanya_pengguna">Jumlah soal yang ditanya pengguna: </string>
+    <string name="jml_soal_sudah_dijawab">Jumlah soal yang sudah dijawab: </string>
+    <string name="soal_tersisa">Soal masih tersisa</string>
+    <string name="book">Book</string>
+    <string name="pass">Pass</string>
+
     <!--subjek-->
     <string name="matematika">Matematika</string>
     <string name="fisika">Fisika</string>
@@ -119,6 +136,11 @@
         <item>Others</item>
     </string-array>
 
+    <string-array name="action_forum">
+        <item>Share</item>
+        <item>Report abuse</item>
+    </string-array>
+
     <string-array name="tkt_akademik_array">
         <item>1 SD</item>
         <item>8 SMP</item>
@@ -127,6 +149,15 @@
 
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
+
+    <string-array name="navDrawerItems2">
+        <item>Home</item>
+        <item>Layanan Kami</item>
+        <item>Syllabus</item>
+        <item>FAQ</item>
+        <item>Tentang Kami</item>
+        <item>Log Out</item>
+    </string-array>
 
     <string-array name="navDrawerItems">
         <item>Home</item>

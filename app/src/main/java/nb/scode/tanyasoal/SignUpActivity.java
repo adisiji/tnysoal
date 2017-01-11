@@ -6,9 +6,9 @@ import android.view.View;
 
 import com.jaredrummler.materialspinner.MaterialSpinner;
 
-import nb.scode.tanyasoal.baseAct.BaseActivity;
+import nb.scode.tanyasoal.baseAct.BaseFirstAct;
 
-public class SignUpActivity extends BaseActivity {
+public class SignUpActivity extends BaseFirstAct {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

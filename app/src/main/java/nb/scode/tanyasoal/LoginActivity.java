@@ -1,39 +1,27 @@
 package nb.scode.tanyasoal;
 
 import android.content.Intent;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 
 import custom_font.*;
-import nb.scode.tanyasoal.baseAct.FragmentDrawer;
+import nb.scode.tanyasoal.baseAct.BaseFirstAct;
 
-public class LoginActivity extends AppCompatActivity implements FragmentDrawer.FragmentDrawerListener {
+public class LoginActivity extends BaseFirstAct {
 
     private TextViewApple create;
-    private FragmentDrawer drawerFragment;
-
-    @Override
-    public void onDrawerItemSelected(View view, int position) {
-        Log.d("Click Drawer","U Click "+position);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Toolbar mToolbar = (Toolbar)findViewById(R.id.toolbar);
-        mToolbar.setTitle("");
-        setSupportActionBar(mToolbar);
-        drawerFragment = (FragmentDrawer) getFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);
-        drawerFragment.setUp(R.id.fragment_navigation_drawer, (DrawerLayout) findViewById(R.id.drawer_layout), mToolbar);
-        drawerFragment.setDrawerListener(this);
-
         create = (TextViewApple)findViewById(R.id.btn_daftar);
-
+        ImageView logoTop = (ImageView)findViewById(R.id.logo);
+        Glide.with(this).load(R.drawable.logo_fix).asBitmap().fitCenter().into(logoTop);
         create.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,6 +55,10 @@ public class LoginActivity extends AppCompatActivity implements FragmentDrawer.F
             }
         });
 
+        getBack().setVisibility(View.GONE);
+        getProfile().setVisibility(View.GONE);
+        getMail().setVisibility(View.GONE);
+
         TextViewApple lupaPass = (TextViewApple)findViewById(R.id.forgotpwd);
         lupaPass.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,4 +68,5 @@ public class LoginActivity extends AppCompatActivity implements FragmentDrawer.F
             }
         });
     }
+
 }

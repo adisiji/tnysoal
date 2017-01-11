@@ -2,6 +2,7 @@ package nb.scode.tanyasoal;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.GridView;
@@ -26,8 +27,19 @@ public class LayananTanyaTutorAct extends BaseActivity {
             cards[i] = card;
         }
 
+        LayTnyTutorAdapter adapter = new LayTnyTutorAdapter(this,cards);
+
         // Instance of ImageAdapter Class
-        gridView.setAdapter(new LayTnyTutorAdapter(this, cards));
+        gridView.setAdapter(adapter);
+
+        adapter.SetActionCard(new LayTnyTutorAdapter.ActionCard() {
+            @Override
+            public void onClick(int position) {
+                Log.e("User click = ",String.valueOf(position));
+                Intent i = new Intent(getApplicationContext(),ChatroomTanyaTutorActivity.class);
+                startActivity(i);
+            }
+        });
 
         FrameLayout btnTanyaTutor = (FrameLayout)findViewById(R.id.btn_tanya_tutor);
         btnTanyaTutor.setOnClickListener(new View.OnClickListener() {

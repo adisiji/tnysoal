@@ -1,9 +1,11 @@
 package nb.scode.tanyasoal;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.support.v4.content.ContextCompat;
 import android.view.Gravity;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -47,6 +49,13 @@ public class AvailQuestionActivity extends BaseActivity {
             if(i%2==0){
                 tableRow.setBackgroundColor(getResources().getColor(R.color.soft_grey));
             }
+            tableRow.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(getApplicationContext(), ChatroomTutorActivity.class);
+                    startActivity(i);
+                }
+            });
             ArrayList<TextViewMyriad> ready = new ArrayList<>();
             TextViewMyriad subjek = new TextViewMyriad(this);
             subjek.setText(String.valueOf(q.getSubjek()));
