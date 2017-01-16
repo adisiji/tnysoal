@@ -10,6 +10,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Locale;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import custom_font.TextViewMyriad;
 import nb.scode.tanyasoal.baseAct.BaseActivity;
 import nb.scode.tanyasoal.models.LogUserAct;
@@ -18,13 +20,13 @@ public class LogUserActivity extends BaseActivity {
 
     private final int sdk = android.os.Build.VERSION.SDK_INT;
 
-    private TableLayout tabelAktivitas;
+    @BindView(R.id.table_cat_aktivitas) TableLayout tabelAktivitas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_user);
-        tabelAktivitas = (TableLayout)findViewById(R.id.table_cat_aktivitas);
+        ButterKnife.bind(this);
         setModelAktivitas();
     }
 

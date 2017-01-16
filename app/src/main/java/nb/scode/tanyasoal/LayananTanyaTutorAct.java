@@ -6,11 +6,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.GridView;
-import android.widget.RatingBar;
 
+import butterknife.OnClick;
 import nb.scode.tanyasoal.adapter.LayTnyTutorAdapter;
 import nb.scode.tanyasoal.baseAct.BaseActivity;
-import nb.scode.tanyasoal.models.question;
+import nb.scode.tanyasoal.models.Question;
 
 public class LayananTanyaTutorAct extends BaseActivity {
 
@@ -20,9 +20,9 @@ public class LayananTanyaTutorAct extends BaseActivity {
         setContentView(R.layout.activity_layanan_tanya_tutor);
 
         GridView gridView = (GridView) findViewById(R.id.gridview);
-        question cards[] = new question[50];
+        Question cards[] = new Question[50];
         for(int i = 0;i<cards.length;i++){
-            question card = new question();
+            Question card = new Question();
             card.setSoal("Apa nama benda ini ?");
             cards[i] = card;
         }
@@ -41,13 +41,11 @@ public class LayananTanyaTutorAct extends BaseActivity {
             }
         });
 
-        FrameLayout btnTanyaTutor = (FrameLayout)findViewById(R.id.btn_tanya_tutor);
-        btnTanyaTutor.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), TanyaTutorActivity.class);
-                startActivity(i);
-            }
-        });
+    }
+
+    @OnClick(R.id.btn_tanya_tutor)
+    void TanyaTutor(){
+        Intent i = new Intent(getApplicationContext(), TanyaTutorActivity.class);
+        startActivity(i);
     }
 }

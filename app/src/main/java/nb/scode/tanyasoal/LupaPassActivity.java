@@ -2,35 +2,33 @@ package nb.scode.tanyasoal;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import custom_font.EditTextMyriad;
-import custom_font.TextViewMyriad;
-import nb.scode.tanyasoal.baseAct.BaseFirstAct;
+import nb.scode.tanyasoal.baseAct.BaseFirstActivity;
 
-public class LupaPassActivity extends BaseFirstAct {
+public class LupaPassActivity extends BaseFirstActivity {
 
-    private EditTextMyriad email, namalkp, hp, tlh;
+    @BindView(R.id.txt_lp_email) EditTextMyriad email;
+    @BindView(R.id.txt_lp_nama_lkp) EditTextMyriad namalkp;
+    @BindView(R.id.txt_lp_no_hp) EditTextMyriad hp;
+    @BindView(R.id.lp_tgl_lhr) EditTextMyriad tlh;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lupa_pass);
+        ButterKnife.bind(this);
         final String dummyText = getResources().getString(R.string.abc);
-        email = (EditTextMyriad)findViewById(R.id.txt_lp_email);
-        namalkp = (EditTextMyriad)findViewById(R.id.txt_lp_nama_lkp);
-        hp = (EditTextMyriad)findViewById(R.id.txt_lp_no_hp);
-        tlh = (EditTextMyriad)findViewById(R.id.lp_tgl_lhr);
         setDummy(dummyText);
+    }
 
-        TextViewMyriad kirim = (TextViewMyriad)findViewById(R.id.btn_kirim_sandi);
-        kirim.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), GantiPassActivity.class);
-                startActivity(i);
-            }
-        });
+    @OnClick(R.id.btn_kirim_sandi)
+    void kirimSandi(){
+        Intent i = new Intent(getApplicationContext(), GantiPassActivity.class);
+        startActivity(i);
     }
 
     @Override

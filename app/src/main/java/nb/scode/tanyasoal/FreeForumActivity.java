@@ -15,13 +15,14 @@ import java.util.List;
 import nb.scode.tanyasoal.adapter.ReplyFreeForumAdapter;
 import nb.scode.tanyasoal.adapter.RootFreeForumAdapter;
 import nb.scode.tanyasoal.baseAct.BaseActivity;
-import nb.scode.tanyasoal.models.question;
-import nb.scode.tanyasoal.models.reply;
+import nb.scode.tanyasoal.models.Question;
+import nb.scode.tanyasoal.models.Reply;
 
 public class FreeForumActivity extends BaseActivity {
 
-    private List<question> questions = new ArrayList<>();
-    private List<reply> replies = new ArrayList<>();
+
+    private List<Question> Questions = new ArrayList<>();
+    private List<Reply> replies = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,18 +30,18 @@ public class FreeForumActivity extends BaseActivity {
         setContentView(R.layout.activity_free_forum);
 
         for(int i = 0;i<50;i++){
-            question q = new question();
+            Question q = new Question();
             q.setSoal("Pertanyaan ke-"+i);
-            questions.add(q);
+            Questions.add(q);
         }
         for(int i = 0;i<5;i++){
-            reply r = new reply();
-            r.setContent("Ini reply ke-"+i);
+            Reply r = new Reply();
+            r.setContent("Ini Reply ke-"+i);
             replies.add(r);
         }
         RecyclerView rv = (RecyclerView)findViewById(R.id.rv_free_forum);
         ReplyFreeForumAdapter adapter2 = new ReplyFreeForumAdapter(replies, getApplicationContext());
-        RootFreeForumAdapter adapter = new RootFreeForumAdapter(getApplicationContext(), questions, adapter2);
+        RootFreeForumAdapter adapter = new RootFreeForumAdapter(getApplicationContext(), Questions, adapter2);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         rv.setLayoutManager(mLayoutManager);
         rv.setItemAnimator(new DefaultItemAnimator());

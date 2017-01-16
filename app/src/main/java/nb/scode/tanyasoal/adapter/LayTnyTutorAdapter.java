@@ -8,9 +8,11 @@ import android.widget.BaseAdapter;
 import android.widget.RatingBar;
 import android.widget.RelativeLayout;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import custom_font.TextViewMyriad;
 import nb.scode.tanyasoal.R;
-import nb.scode.tanyasoal.models.question;
+import nb.scode.tanyasoal.models.Question;
 
 /**
  * Created by User on 1/6/2017.
@@ -19,11 +21,11 @@ import nb.scode.tanyasoal.models.question;
 public class LayTnyTutorAdapter extends BaseAdapter {
 
     private Context mContext;
-    private question[] questionz;
+    private Question[] questionz;
     private LayoutInflater inflater;
     private ActionCard actionCard;
 
-    public LayTnyTutorAdapter(Context context, question[] atmCards) {
+    public LayTnyTutorAdapter(Context context, Question[] atmCards) {
         this.mContext = context;
         this.questionz = atmCards;
         inflater = LayoutInflater.from(context);
@@ -50,18 +52,19 @@ public class LayTnyTutorAdapter extends BaseAdapter {
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
-
-        question card = questionz[position];
-        if (convertView == null) {
-            convertView = inflater.inflate(R.layout.card_lay_tanya_tutor,parent, false);
+        ViewHolder holder;
+        Question card = questionz[position];
+        if (convertView != null) {
+            holder = (ViewHolder) convertView.getTag();
         }
-
-        final TextViewMyriad soal = (TextViewMyriad)convertView.findViewById(R.id.isi_soal_layanan);
-        RatingBar ratingBar = (RatingBar)convertView.findViewById(R.id.rating_tanya);
-        ratingBar.setRating(4);
-        soal.setText(card.getSoal());
-        RelativeLayout rl = (RelativeLayout)convertView.findViewById(R.id.rl_root_laytanya);
-        rl.setOnClickListener(new View.OnClickListener() {
+        else {
+            convertView = inflater.inflate(R.layout.card_lay_tanya_tutor,parent, false);
+            holder = new ViewHolder(convertView);
+            convertView.setTag(holder);
+        }
+        holder.ratingBar.setRating(4);
+        holder.soal.setText(card.getSoal());
+        holder.rl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 actionCard.onClick(position);
@@ -69,6 +72,16 @@ public class LayTnyTutorAdapter extends BaseAdapter {
         });
 
         return convertView;
+    }
+
+    static class ViewHolder{
+        @BindView(R.id.isi_soal_layanan) TextViewMyriad soal;
+        @BindView(R.id.rating_tanya) RatingBar ratingBar;
+        @BindView(R.id.rl_root_laytanya) RelativeLayout rl;
+
+        public ViewHolder(View view) {
+            ButterKnife.bind(this, view);
+        }
     }
 
     public interface ActionCard {

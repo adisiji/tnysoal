@@ -1,10 +1,9 @@
 package nb.scode.tanyasoal;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.GridView;
 
-import nb.scode.tanyasoal.adapter.trfAtmAdapter;
+import nb.scode.tanyasoal.adapter.TrfAtmAdapter;
 import nb.scode.tanyasoal.baseAct.BaseActivity;
 import nb.scode.tanyasoal.models.AtmCard;
 
@@ -24,6 +23,6 @@ public class InetBankingActivity extends BaseActivity {
         }
 
         // Instance of ImageAdapter Class
-        gridView.setAdapter(new trfAtmAdapter(this, cards));
+        gridView.setAdapter(new TrfAtmAdapter(this, cards));
     }
 }

@@ -10,6 +10,7 @@
     <color name="gray_bg">#E5E5E5</color>
     <color name="blue_hx">#337abd</color>
     <color name="soft_blue_hx">#00abed</color>
+    <color name="soft2_blue_hx">#00afef</color>
     <color name="grey_bg_btn">#58585a</color>
 
     <color name="txt_hint_login">#757575</color>

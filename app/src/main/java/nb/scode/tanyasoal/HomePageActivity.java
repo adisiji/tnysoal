@@ -4,11 +4,10 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.FrameLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import custom_font.TextViewMyriad;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import nb.scode.tanyasoal.baseAct.BaseActivity;
 
 public class HomePageActivity extends BaseActivity {
@@ -19,48 +18,39 @@ public class HomePageActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
-        FrameLayout btnTanyaTutor = (FrameLayout)findViewById(R.id.btn_tny_tutor);
-        FrameLayout btnKomunitas = (FrameLayout)findViewById(R.id.btn_komunitas);
-        TextViewMyriad btnIsiSaldo = (TextViewMyriad)findViewById(R.id.btn_isiSaldo);
-        TextViewMyriad lht_cat_user = (TextViewMyriad)findViewById(R.id.cat_aktivitas_home);
-        lht_cat_user.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), LogUserActivity.class);
-                startActivity(i);
-            }
-        });
-        btnIsiSaldo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), IsiSaldoActivity.class);
-                startActivity(i);
-            }
-        });
-        TextViewMyriad btnPaketSedia = (TextViewMyriad)findViewById(R.id.btn_paketsedia);
-        btnPaketSedia.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), PaketSediaActivity.class);
-                startActivity(i);
-            }
-        });
-        btnTanyaTutor.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),LayananTanyaTutorAct.class);
-                startActivity(i);
-            }
-        });
-        btnKomunitas.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), KomunitasActivity.class);
-                startActivity(i);
-            }
-        });
-        TextView bckbtn = (TextView)findViewById(R.id.toolbar_back_btn);
-        bckbtn.setVisibility(View.GONE);
+        ButterKnife.bind(this);
+
+        getBackToolbar().setVisibility(View.GONE);
+    }
+
+    @OnClick(R.id.btn_paketsedia)
+    void paketSedia(){
+        Intent i = new Intent(getApplicationContext(), PaketSediaActivity.class);
+        startActivity(i);
+    }
+
+    @OnClick(R.id.btn_tny_tutor)
+    void tanyaTutor(){
+        Intent i = new Intent(getApplicationContext(),LayananTanyaTutorAct.class);
+        startActivity(i);
+    }
+
+    @OnClick(R.id.btn_komunitas)
+    void keKomunitas(){
+        Intent i = new Intent(getApplicationContext(), KomunitasActivity.class);
+        startActivity(i);
+    }
+
+    @OnClick(R.id.btn_isiSaldo)
+    void isiSaldo(){
+        Intent i = new Intent(getApplicationContext(), IsiSaldoActivity.class);
+        startActivity(i);
+    }
+
+    @OnClick(R.id.cat_aktivitas_home)
+    void catAktivitas(){
+        Intent i = new Intent(getApplicationContext(), LogUserActivity.class);
+        startActivity(i);
     }
 
     @Override

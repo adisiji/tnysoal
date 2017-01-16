@@ -4,7 +4,7 @@ package nb.scode.tanyasoal.models;
  * Created by User on 1/2/2017.
  */
 
-public class question {
+public class Question {
     private int subjek;
     private int lvl;
     private int jawaban;

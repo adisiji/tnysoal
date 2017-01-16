@@ -18,13 +18,13 @@ import nb.scode.tanyasoal.models.AtmCard;
  * Created by User on 12/27/2016.
  */
 
-public class trfAtmAdapter extends BaseAdapter{
+public class TrfAtmAdapter extends BaseAdapter{
 
     private Context mContext;
     private AtmCard[] atms;
     private LayoutInflater inflater;
 
-    public trfAtmAdapter(Context context, AtmCard[] atmCards) {
+    public TrfAtmAdapter(Context context, AtmCard[] atmCards) {
         this.mContext = context;
         this.atms = atmCards;
         inflater = LayoutInflater.from(context);

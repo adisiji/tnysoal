@@ -1,26 +1,30 @@
 package nb.scode.tanyasoal;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 import com.jaredrummler.materialspinner.MaterialSpinner;
 
-import nb.scode.tanyasoal.baseAct.BaseFirstAct;
+import butterknife.BindArray;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import nb.scode.tanyasoal.baseAct.BaseFirstActivity;
 
-public class SignUpActivity extends BaseFirstAct {
+public class SignUpActivity extends BaseFirstActivity {
+
+    @BindView(R.id.txt_create_jenakad) MaterialSpinner spinJenAkad;
+    @BindView(R.id.spin_tingkat_akad) MaterialSpinner spinTktAkad;
+
+    @BindArray(R.array.jns_akademik_array) String[] jnsAkademik;
+    @BindArray(R.array.tkt_akademik_array) String[] tktAkademik;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-
-        MaterialSpinner spinJenAkad = (MaterialSpinner) findViewById(R.id.txt_create_jenakad);
-        spinJenAkad.setItems(getResources().getStringArray(R.array.jns_akademik_array));
-
-        MaterialSpinner spinTktAkad = (MaterialSpinner) findViewById(R.id.spin_tingkat_akad);
-        spinTktAkad.setItems(getResources().getStringArray(R.array.tkt_akademik_array));
-
+        ButterKnife.bind(this);
+        spinJenAkad.setItems(jnsAkademik);
+        spinTktAkad.setItems(tktAkademik);
         getMail().setVisibility(View.GONE);
     }
 

@@ -210,71 +210,6 @@
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"/>
 
-
-    <LinearLayout
-        android:id="@+id/btm_lay_tanya"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:layout_below="@id/bg_rating_chat"
-        android:layout_marginTop="20dp"
-        android:weightSum="5">
-        <custom_font.TextViewMyriad
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="Mate"
-            android:background="@color/red_selected"
-            android:textColor="@android:color/white"
-            android:padding="10dp"
-            android:gravity="center"
-            />
-        <custom_font.TextViewMyriad
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/fisika"
-            android:layout_marginLeft="2dp"
-            android:layout_marginStart="2dp"
-            android:background="@color/red_unselected"
-            android:textColor="@android:color/white"
-            android:gravity="center"
-            android:padding="10dp"/>
-        <custom_font.TextViewMyriad
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/kimia"
-            android:layout_marginLeft="2dp"
-            android:layout_marginStart="2dp"
-            android:background="@color/red_unselected"
-            android:textColor="@android:color/white"
-            android:gravity="center"
-            android:padding="10dp"/>
-        <custom_font.TextViewMyriad
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/biologi"
-            android:layout_marginLeft="2dp"
-            android:layout_marginStart="2dp"
-            android:background="@color/red_unselected"
-            android:textColor="@android:color/white"
-            android:gravity="center"
-            android:padding="10dp"/>
-        <custom_font.TextViewMyriad
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="B.Ing"
-            android:layout_marginLeft="2dp"
-            android:layout_marginStart="2dp"
-            android:background="@color/red_unselected"
-            android:textColor="@android:color/white"
-            android:gravity="center"
-            android:padding="10dp"/>
-    </LinearLayout>
-
     <custom_font.TextViewMyriad
         android:text="Rating"
         android:layout_width="wrap_content"
@@ -296,6 +231,14 @@
         android:layout_marginTop="7dp"
         android:rating="4"
         android:id="@+id/ratingBar" />
+
+    <include
+        android:id="@+id/btm_lay_tanya"
+        layout="@layout/rbtn_subjek_red"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ratingBar"/>
 
 </RelativeLayout>
 

@@ -2,56 +2,52 @@ package nb.scode.tanyasoal;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import com.jaredrummler.materialspinner.MaterialSpinner;
 
+import butterknife.BindArray;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import custom_font.EditTextMyriad;
-import custom_font.TextViewMyriad;
 import nb.scode.tanyasoal.baseAct.BaseActivity;
 
 public class ProfileActivity extends BaseActivity {
 
-    private EditTextMyriad namalkp,namatmp,gantipass,konfpass, sekolah, namalkp2, hp, tlh;
-    private TextViewMyriad cat_guna;
+    @BindView(R.id.txt_ed_name) EditTextMyriad namalkp;
+    @BindView(R.id.txt_ed_nama_tampil) EditTextMyriad namatmp;
+    @BindView(R.id.txt_ganti_pass) EditTextMyriad gantipass;
+    @BindView(R.id.txt_ed_confpass) EditTextMyriad konfpass;
+    @BindView(R.id.txt_ed_sekolah) EditTextMyriad sekolah;
+    @BindView(R.id.txt_nama_lkp) EditTextMyriad namalkp2;
+    @BindView(R.id.txt_no_hp) EditTextMyriad hp;
+    @BindView(R.id.ed_tgl_lhr) EditTextMyriad tlh;
+    @BindView(R.id.txt_create_jenakad) MaterialSpinner spinJenAkad;
+    @BindView(R.id.spin_tingkat_akad) MaterialSpinner spinTktAkad;
+
+    @BindArray(R.array.jns_akademik_array) String[] jnsAkademik;
+    @BindArray(R.array.tkt_akademik_array) String[] tktAkademik;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-
-        MaterialSpinner spinJenAkad = (MaterialSpinner) findViewById(R.id.txt_create_jenakad);
-        spinJenAkad.setItems(getResources().getStringArray(R.array.jns_akademik_array));
-
-        MaterialSpinner spinTktAkad = (MaterialSpinner) findViewById(R.id.spin_tingkat_akad);
-        spinTktAkad.setItems(getResources().getStringArray(R.array.tkt_akademik_array));
+        ButterKnife.bind(this);
+        spinJenAkad.setItems(jnsAkademik);
+        spinTktAkad.setItems(tktAkademik);
         final String dummyText = getResources().getString(R.string.abc);
-        namalkp = (EditTextMyriad)findViewById(R.id.txt_ed_name);
-        namatmp = (EditTextMyriad)findViewById(R.id.txt_ed_nama_tampil);
-        gantipass = (EditTextMyriad) findViewById(R.id.txt_ganti_pass);
-        konfpass = (EditTextMyriad)findViewById(R.id.txt_ed_confpass);
-        sekolah = (EditTextMyriad)findViewById(R.id.txt_ed_sekolah);
-        namalkp2 = (EditTextMyriad)findViewById(R.id.txt_nama_lkp);
-        hp = (EditTextMyriad)findViewById(R.id.txt_no_hp);
-        tlh = (EditTextMyriad)findViewById(R.id.ed_tgl_lhr);
-        cat_guna = (TextViewMyriad)findViewById(R.id.cat_aktivitas_profile);
-        cat_guna.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), LogUserActivity.class);
-                startActivity(i);
-            }
-        });
         setDummyText(dummyText);
+    }
 
-        TextViewMyriad kembali = (TextViewMyriad)findViewById(R.id.btn_kembali);
-        kembali.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onBackPressed();
-            }
-        });
+    @OnClick(R.id.cat_aktivitas_profile)
+    void lihatCat(){
+        Intent i = new Intent(getApplicationContext(), LogUserActivity.class);
+        startActivity(i);
+    }
 
+    @OnClick(R.id.btn_kembali)
+    void back(){
+        onBackPressed();
     }
 
     private void setDummyText(String dt){

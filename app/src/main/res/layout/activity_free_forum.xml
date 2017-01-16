@@ -7,69 +7,13 @@
     tools:context="nb.scode.tanyasoal.FreeForumActivity"
     android:background="@drawable/grad_login">
 
-    <LinearLayout
+    <include
         android:id="@+id/btm_lay_tanya"
-        android:layout_width="match_parent"
+        layout="@layout/rbtn_subjek_red"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
         android:layout_marginTop="20dp"
-        android:layout_alignParentBottom="true"
-        android:weightSum="5">
-        <custom_font.TextViewMyriad
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="Mate"
-            android:background="@color/red_selected"
-            android:textColor="@android:color/white"
-            android:padding="10dp"
-            android:gravity="center"
-            />
-        <custom_font.TextViewMyriad
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/fisika"
-            android:layout_marginLeft="2dp"
-            android:layout_marginStart="2dp"
-            android:background="@color/red_unselected"
-            android:textColor="@android:color/white"
-            android:gravity="center"
-            android:padding="10dp"/>
-        <custom_font.TextViewMyriad
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/kimia"
-            android:layout_marginLeft="2dp"
-            android:layout_marginStart="2dp"
-            android:background="@color/red_unselected"
-            android:textColor="@android:color/white"
-            android:gravity="center"
-            android:padding="10dp"/>
-        <custom_font.TextViewMyriad
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/biologi"
-            android:layout_marginLeft="2dp"
-            android:layout_marginStart="2dp"
-            android:background="@color/red_unselected"
-            android:textColor="@android:color/white"
-            android:gravity="center"
-            android:padding="10dp"/>
-        <custom_font.TextViewMyriad
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="B.Ing"
-            android:layout_marginLeft="2dp"
-            android:layout_marginStart="2dp"
-            android:background="@color/red_unselected"
-            android:textColor="@android:color/white"
-            android:gravity="center"
-            android:padding="10dp"/>
-    </LinearLayout>
+        android:layout_alignParentBottom="true"/>
 
     <custom_font.TextViewMyriad
         android:id="@+id/btn_tny_soal_baru"
@@ -92,6 +36,8 @@
         android:layout_above="@id/btn_tny_soal_baru"
         android:background="@drawable/white_box_grey_stroke"
         android:layout_margin="5dp"
+        android:padding="5dp"
+        android:gravity="left"
         android:id="@+id/editTextMyriad" />
 
     <android.support.v4.widget.NestedScrollView
@@ -109,7 +55,4 @@
             android:scrollbars="vertical">
         </android.support.v7.widget.RecyclerView>
     </android.support.v4.widget.NestedScrollView>
-
-
-
 </RelativeLayout>

@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 import custom_font.TextViewMyriad;
 import nb.scode.tanyasoal.baseAct.BaseActivity;
-import nb.scode.tanyasoal.models.question;
+import nb.scode.tanyasoal.models.Question;
 
 public class AvailQuestionActivity extends BaseActivity {
 
@@ -32,7 +32,7 @@ public class AvailQuestionActivity extends BaseActivity {
 
     private void setModelSoal(){
         for(int i = 0;i<50;i++){
-            question q = new question();
+            Question q = new Question();
             q.setTutor("Joni Handoko");
             q.setLvl(1);
             q.setNama("Ney Darmawan");

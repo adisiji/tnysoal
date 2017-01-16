@@ -5,10 +5,14 @@ import android.os.Bundle;
 
 import com.bumptech.glide.Glide;
 
+import butterknife.BindView;
 import nb.scode.tanyasoal.baseAct.BaseActivity;
 import uk.co.senab.photoview.PhotoView;
 
 public class ChatroomTutorActivity extends BaseActivity {
+    @BindView(R.id.img_main_soal_chat) PhotoView mainsoal;
+    @BindView(R.id.img_jawaban1) PhotoView jawaban1;
+    @BindView(R.id.img_jawaban2) PhotoView jawaban2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,9 +20,6 @@ public class ChatroomTutorActivity extends BaseActivity {
         setContentView(R.layout.activity_chatroom_tutor);
 
         Context context = getApplicationContext();
-        PhotoView mainsoal = (PhotoView) findViewById(R.id.img_main_soal_chat);
-        PhotoView jawaban1 = (PhotoView)findViewById(R.id.img_jawaban1);
-        PhotoView jawaban2 = (PhotoView) findViewById(R.id.img_jawaban2);
 
         Glide.with(context).load(R.drawable.jawab_soal1)
                 .asBitmap()

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/grad_login"
     tools:context="nb.scode.tanyasoal.LayananTanyaTutorAct">
+
     <FrameLayout
         android:id="@+id/btn_tanya_tutor"
         android:layout_width="200dp"
@@ -28,84 +29,27 @@
             android:background="@drawable/round_transp"/>
     </FrameLayout>
 
-    <LinearLayout
+    <include
         android:id="@+id/btm_lay_tanya"
+        layout="@layout/rbtn_subjek_red"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"/>
+
+    <GridView
+        android:layout_below="@id/btn_tanya_tutor"
+        android:layout_above="@id/btm_lay_tanya"
+        android:id="@+id/gridview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_alignParentBottom="true"
-        android:weightSum="5">
-        <custom_font.TextViewMyriad
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="Mate"
-            android:background="@color/red_selected"
-            android:textColor="@android:color/white"
-            android:padding="10dp"
-            android:gravity="center"
-            />
-        <custom_font.TextViewMyriad
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/fisika"
-            android:layout_marginLeft="2dp"
-            android:layout_marginStart="2dp"
-            android:background="@color/red_unselected"
-            android:textColor="@android:color/white"
-            android:gravity="center"
-            android:padding="10dp"/>
-        <custom_font.TextViewMyriad
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/kimia"
-            android:layout_marginLeft="2dp"
-            android:layout_marginStart="2dp"
-            android:background="@color/red_unselected"
-            android:textColor="@android:color/white"
-            android:gravity="center"
-            android:padding="10dp"/>
-        <custom_font.TextViewMyriad
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/biologi"
-            android:layout_marginLeft="2dp"
-            android:layout_marginStart="2dp"
-            android:background="@color/red_unselected"
-            android:textColor="@android:color/white"
-            android:gravity="center"
-            android:padding="10dp"/>
-        <custom_font.TextViewMyriad
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="B.Ing"
-            android:layout_marginLeft="2dp"
-            android:layout_marginStart="2dp"
-            android:background="@color/red_unselected"
-            android:textColor="@android:color/white"
-            android:gravity="center"
-            android:padding="10dp"/>
-    </LinearLayout>
-
-        <GridView
-            android:layout_below="@id/btn_tanya_tutor"
-            android:layout_above="@id/btm_lay_tanya"
-            android:id="@+id/gridview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:columnWidth="150dp"
-            android:numColumns="auto_fit"
-            android:verticalSpacing="10dp"
-            android:horizontalSpacing="5dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:scrollbars="vertical"/>
-
+        android:columnWidth="150dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:scrollbars="vertical"/>
 
 </RelativeLayout>

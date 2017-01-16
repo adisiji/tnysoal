@@ -277,72 +277,13 @@
             android:textColor="@android:color/white"/>
 
 
-        <LinearLayout
+        <include
             android:id="@+id/btm_lay_tanya"
-            android:layout_width="match_parent"
+            layout="@layout/rbtn_subjek_red"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:layout_below="@id/btn_tny_soal_baru"
+            android:layout_width="match_parent"
             android:layout_marginTop="20dp"
-            android:weightSum="5">
-            <custom_font.TextViewMyriad
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="Mate"
-                android:background="@color/red_selected"
-                android:textColor="@android:color/white"
-                android:padding="10dp"
-                android:gravity="center"
-                />
-            <custom_font.TextViewMyriad
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="@string/fisika"
-                android:layout_marginLeft="2dp"
-                android:layout_marginStart="2dp"
-                android:background="@color/red_unselected"
-                android:textColor="@android:color/white"
-                android:gravity="center"
-                android:padding="10dp"/>
-            <custom_font.TextViewMyriad
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="@string/kimia"
-                android:layout_marginLeft="2dp"
-                android:layout_marginStart="2dp"
-                android:background="@color/red_unselected"
-                android:textColor="@android:color/white"
-                android:gravity="center"
-                android:padding="10dp"/>
-
-            <custom_font.TextViewMyriad
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="@string/biologi"
-                android:layout_marginLeft="2dp"
-                android:layout_marginStart="2dp"
-                android:background="@color/red_unselected"
-                android:textColor="@android:color/white"
-                android:gravity="center"
-                android:padding="10dp"
-                android:id="@+id/textViewMyriad9" />
-
-            <custom_font.TextViewMyriad
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="B.Ing"
-                android:layout_marginLeft="2dp"
-                android:layout_marginStart="2dp"
-                android:background="@color/red_unselected"
-                android:textColor="@android:color/white"
-                android:gravity="center"
-                android:padding="10dp"/>
-        </LinearLayout>
+            android:layout_below="@+id/btn_tny_soal_baru"/>
 
     </RelativeLayout>
 
