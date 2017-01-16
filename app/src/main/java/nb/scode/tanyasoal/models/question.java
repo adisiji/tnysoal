@@ -5,9 +5,9 @@ package nb.scode.tanyasoal.models;
  */
 
 public class Question {
-    private int subjek;
-    private int lvl;
-    private int jawaban;
+    private String subjek;
+    private String lvl;
+    private String jawaban;
 
     public int getPeriode() {
         return periode;
@@ -30,27 +30,27 @@ public class Question {
 
     private long sisaw;
 
-    public int getSubjek() {
+    public String getSubjek() {
         return subjek;
     }
 
-    public void setSubjek(int subjek) {
+    public void setSubjek(String subjek) {
         this.subjek = subjek;
     }
 
-    public int getLvl() {
+    public String getLvl() {
         return lvl;
     }
 
-    public void setLvl(int lvl) {
+    public void setLvl(String lvl) {
         this.lvl = lvl;
     }
 
-    public int getJawaban() {
+    public String getJawaban() {
         return jawaban;
     }
 
-    public void setJawaban(int jawaban) {
+    public void setJawaban(String jawaban) {
         this.jawaban = jawaban;
     }
 

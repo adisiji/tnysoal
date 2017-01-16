@@ -6,6 +6,7 @@ import android.os.Bundle;
 import com.bumptech.glide.Glide;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import nb.scode.tanyasoal.baseAct.BaseActivity;
 import uk.co.senab.photoview.PhotoView;
 
@@ -18,7 +19,7 @@ public class ChatroomTutorActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chatroom_tutor);
-
+        ButterKnife.bind(this);
         Context context = getApplicationContext();
 
         Glide.with(context).load(R.drawable.jawab_soal1)

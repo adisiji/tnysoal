@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/white_box_grey_stroke"
+    android:padding="5dp"
+    android:layout_marginTop="5dp"
+    android:id="@+id/card_cl_avail_q">
+
+    <custom_font.TextViewMyriad
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subjek"
+        android:id="@+id/tv_subjek_q"
+        android:layout_marginStart="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/border_card_q"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/soft_grey"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subjek_q"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <custom_font.TextViewMyriad
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nama"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/border_card_q"
+        android:layout_marginStart="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tv_nama_q" />
+
+    <custom_font.TextViewMyriad
+        android:id="@+id/tv_level_q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/level"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama_q"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"/>
+
+    <custom_font.TextViewMyriad
+        android:id="@+id/tv_tutor_q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tutor"
+        app:layout_constraintTop_toBottomOf="@+id/tv_level_q"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"/>
+
+    <custom_font.TextViewMyriad
+        android:id="@+id/tv_periode_q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/periode"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tutor_q"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"/>
+
+    <custom_font.TextViewMyriad
+        android:id="@+id/tv_tipejawab_q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jawaban"
+        app:layout_constraintTop_toBottomOf="@+id/tv_periode_q"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"/>
+
+    <custom_font.TextViewMyriad
+        android:id="@+id/content_subjek_q"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=": Fisika"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="5dp"
+        app:layout_constraintLeft_toLeftOf="@+id/content_jawaban_q"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_subjek_q"/>
+
+    <custom_font.TextViewMyriad
+        android:id="@+id/content_nama_q"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=": Edo"
+        app:layout_constraintTop_toBottomOf="@+id/border_card_q"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="5dp"
+        app:layout_constraintLeft_toLeftOf="@+id/content_jawaban_q"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_nama_q"/>
+
+    <custom_font.TextViewMyriad
+        android:id="@+id/content_level_q"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=": Kelas 4 SD"
+        app:layout_constraintTop_toBottomOf="@+id/content_nama_q"
+        app:layout_constraintLeft_toLeftOf="@+id/content_jawaban_q"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="5dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_level_q"/>
+
+    <custom_font.TextViewMyriad
+        android:id="@+id/content_tutor_q"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=": Budi"
+        app:layout_constraintTop_toBottomOf="@+id/content_level_q"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="5dp"
+        app:layout_constraintLeft_toLeftOf="@+id/content_periode_q"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_tutor_q"/>
+
+    <custom_font.TextViewMyriad
+        android:id="@+id/content_periode_q"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=": 3 jam"
+        app:layout_constraintTop_toBottomOf="@+id/content_tutor_q"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="5dp"
+        app:layout_constraintLeft_toLeftOf="@+id/content_jawaban_q"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_periode_q"/>
+
+    <custom_font.TextViewMyriad
+        android:id="@+id/content_jawaban_q"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=": Foto"
+        app:layout_constraintLeft_toRightOf="@+id/tv_tipejawab_q"
+        app:layout_constraintTop_toBottomOf="@+id/content_periode_q"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="5dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_tipejawab_q"/>
+
+    <custom_font.TextViewMyriad
+        android:id="@+id/content_sisawaktu_q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 jam"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/content_jawaban_q"/>
+
+    <custom_font.TextViewMyriad
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/content_sisawaktu_q"
+        android:text="@string/sisa_waktu"
+        app:layout_constraintTop_toBottomOf="@id/content_jawaban_q"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"/>
+
+</android.support.constraint.ConstraintLayout>

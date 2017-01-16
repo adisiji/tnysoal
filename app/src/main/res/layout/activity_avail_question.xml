@@ -4,10 +4,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@drawable/grad_login">
 
-    <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
 <RelativeLayout
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_avail_question"
@@ -24,99 +20,17 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="5dp"
         android:textSize="18sp"/>
 
-    <TableLayout
-        android:id="@+id/table_avail_quest"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/title_avail_question"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@android:color/white"
-        android:layout_gravity="center_horizontal">
 
-        <TableRow
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_avail_question"
             android:layout_height="wrap_content"
-            android:id="@+id/tableRow1"
             android:layout_width="match_parent"
-            >
-            <custom_font.TextViewMyriad
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/cellborder"
-                android:id="@+id/tbl_ttl_subjek"
-                android:text="@string/subjek"
-                android:gravity="center_horizontal"
-                android:padding="3dp"
-                 />
+            android:layout_below="@id/title_avail_question"
+            android:layout_margin="10dp">
+        </android.support.v7.widget.RecyclerView>
 
-            <custom_font.TextViewMyriad
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:id="@+id/tbl_ttl_lvl"
-                android:text="@string/level"
-                android:gravity="center_horizontal"
-                android:padding="3dp"
-                 
-                android:background="@drawable/cellborder"/>
-            <custom_font.TextViewMyriad
-                android:layout_width="60dp"
-                android:layout_height="match_parent"
-                android:id="@+id/tbl_ttl_nama"
-                android:text="@string/nama"
-                android:gravity="center_horizontal"
-                android:padding="3dp"
-                android:background="@drawable/cellborder"/>
-            <custom_font.TextViewMyriad
-                android:layout_width="60dp"
-                android:layout_height="match_parent"
-                android:id="@+id/tbl_ttl_ttr"
-                android:text="@string/tutor"
-                android:gravity="center_horizontal"
-                android:padding="3dp"
-                android:background="@drawable/cellborder"/>
-
-            <custom_font.TextViewMyriad
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/tbl_ttl_wakt"
-                android:text="@string/sisa_waktu"
-                android:gravity="center_horizontal"
-                android:padding="3dp"
-                 
-                android:background="@drawable/cellborder"/>
-            <custom_font.TextViewMyriad
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:id="@+id/tbl_ttl_soal"
-                android:text="@string/soal"
-                android:gravity="center_horizontal"
-                android:padding="3dp"
-                android:background="@drawable/cellborder"
-                 />
-            <custom_font.TextViewMyriad
-                android:layout_width="60dp"
-                android:layout_height="match_parent"
-                android:id="@+id/tbl_ttl_period"
-                android:text="@string/periode"
-                android:gravity="center_horizontal"
-                android:padding="3dp"
-                android:background="@drawable/cellborder"
-                 />
-            <custom_font.TextViewMyriad
-                android:layout_width="65dp"
-                android:layout_height="match_parent"
-                android:id="@+id/tbl_ttl_jwb"
-                android:text="@string/jawaban"
-                android:gravity="center_horizontal"
-                android:padding="3dp"
-                android:background="@drawable/cellborder"
-                 />
-        </TableRow>
-
-    </TableLayout>
 </RelativeLayout>
-    </HorizontalScrollView>
 </ScrollView>

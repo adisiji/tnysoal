@@ -72,7 +72,7 @@
     <string name="level">Level</string>
     <string name="nama">Nama</string>
     <string name="tutor">Tutor</string>
-    <string name="sisa_waktu">Sisa Waktu</string>
+    <string name="sisa_waktu">Sisa Waktu:</string>
     <string name="soal">Soal</string>
     <string name="periode">Periode</string>
     <string name="jawaban">Jawaban</string>
@@ -143,7 +143,14 @@
 
     <string-array name="tkt_akademik_array">
         <item>1 SD</item>
+        <item>2 SD</item>
+        <item>3 SD</item>
+        <item>4 SD</item>
+        <item>5 SD</item>
+        <item>6 SD</item>
+        <item>7 SMP</item>
         <item>8 SMP</item>
+        <item>9 SMP</item>
         <item>12 SMA</item>
     </string-array>
 
@@ -157,6 +164,14 @@
         <item>FAQ</item>
         <item>Tentang Kami</item>
         <item>Log Out</item>
+    </string-array>
+
+    <string-array name="subjekItems">
+        <item>Matematika</item>
+        <item>Fisika</item>
+        <item>Kimia</item>
+        <item>Biologi</item>
+        <item>B. Inggris</item>
     </string-array>
 
     <string-array name="navDrawerItems">

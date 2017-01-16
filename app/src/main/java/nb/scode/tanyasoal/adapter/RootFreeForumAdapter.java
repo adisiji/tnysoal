@@ -12,6 +12,8 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import custom_font.TextViewMyriad;
 import nb.scode.tanyasoal.R;
 import nb.scode.tanyasoal.models.Question;
@@ -32,15 +34,13 @@ public class RootFreeForumAdapter extends RecyclerView.Adapter<RootFreeForumAdap
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextViewMyriad content;
-        public RecyclerView rv_reply;
-        public ImageView imageView;
+        @BindView(R.id.content_freeforum) TextViewMyriad content;
+        @BindView(R.id.rv_reply_freeforum) RecyclerView rv_reply;
+        @BindView(R.id.dropdown_root_forum) ImageView imageView;
 
         public MyViewHolder(View view) {
             super(view);
-            content = (TextViewMyriad) view.findViewById(R.id.content_freeforum);
-            rv_reply = (RecyclerView)view.findViewById(R.id.rv_reply_freeforum);
-            imageView = (ImageView)view.findViewById(R.id.dropdown_root_forum);
+            ButterKnife.bind(this,view);
         }
     }
 

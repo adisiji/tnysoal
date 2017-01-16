@@ -3,98 +3,62 @@ package nb.scode.tanyasoal;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
-import android.support.v4.content.ContextCompat;
-import android.view.Gravity;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TableLayout;
-import android.widget.TableRow;
 
 import java.util.ArrayList;
+import java.util.List;
 
-import custom_font.TextViewMyriad;
+import butterknife.BindArray;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import nb.scode.tanyasoal.adapter.AvailQuestAdapter;
 import nb.scode.tanyasoal.baseAct.BaseActivity;
 import nb.scode.tanyasoal.models.Question;
 
 public class AvailQuestionActivity extends BaseActivity {
 
     private final int sdk = android.os.Build.VERSION.SDK_INT;
-
-    private TableLayout tabelQuest;
+    @BindArray(R.array.tkt_akademik_array) String[] tingkat;
+    @BindArray(R.array.subjekItems)String[] subjeks;
+    @BindView(R.id.rv_avail_question) RecyclerView rv_q;
+    private List<Question> questions = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_avail_question);
-        tabelQuest = (TableLayout)findViewById(R.id.table_avail_quest);
+        ButterKnife.bind(this);
+        getBackToolbar().setEnabled(false);
         setModelSoal();
+        AvailQuestAdapter adapter = new AvailQuestAdapter(questions);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+        rv_q.setLayoutManager(mLayoutManager);
+        rv_q.setItemAnimator(new DefaultItemAnimator());
+        adapter.setAction(new AvailQuestAdapter.availAction() {
+            @Override
+            public void onClickCard(int pos, View view) {
+                Intent i = new Intent(getApplicationContext(), ChatroomTutorActivity.class);
+                startActivity(i);
+            }
+        });
+        rv_q.setAdapter(adapter);
     }
 
     private void setModelSoal(){
         for(int i = 0;i<50;i++){
             Question q = new Question();
             q.setTutor("Joni Handoko");
-            q.setLvl(1);
+            q.setLvl(tingkat[i%5]);
             q.setNama("Ney Darmawan");
-            q.setSubjek((i%5)+1);
+            q.setSubjek(subjeks[i%5]);
             q.setSoal("Nomor 2 dan 3 ya kak");
             q.setPeriode(12);
-            q.setJawaban(0);
+            q.setJawaban("Foto");
             q.setSisaw(SystemClock.currentThreadTimeMillis());
-
-            TableRow tableRow = new TableRow(this);
-            tableRow.setLayoutParams(new TableRow.LayoutParams(
-                    TableRow.LayoutParams.MATCH_PARENT,
-                    TableRow.LayoutParams.WRAP_CONTENT));
-            if(i%2==0){
-                tableRow.setBackgroundColor(getResources().getColor(R.color.soft_grey));
-            }
-            tableRow.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent i = new Intent(getApplicationContext(), ChatroomTutorActivity.class);
-                    startActivity(i);
-                }
-            });
-            ArrayList<TextViewMyriad> ready = new ArrayList<>();
-            TextViewMyriad subjek = new TextViewMyriad(this);
-            subjek.setText(String.valueOf(q.getSubjek()));
-            ready.add(subjek);
-            TextViewMyriad lvl = new TextViewMyriad(this);
-            lvl.setText(String.valueOf(q.getLvl()));
-            ready.add(lvl);
-            TextViewMyriad nama = new TextViewMyriad(this);
-            nama.setText(q.getNama());
-            ready.add(nama);
-            TextViewMyriad tutor = new TextViewMyriad(this);
-            tutor.setText(q.getTutor());
-            ready.add(tutor);
-            TextViewMyriad sisawkt = new TextViewMyriad(this);
-            sisawkt.setText(String.valueOf(q.getSisaw()));
-            ready.add(sisawkt);
-            TextViewMyriad soal = new TextViewMyriad(this);
-            soal.setText(q.getSoal());
-            soal.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.blue_hx));
-            ready.add(soal);
-            TextViewMyriad periode = new TextViewMyriad(this);
-            periode.setText(String.valueOf(q.getPeriode()));
-            ready.add(periode);
-            TextViewMyriad jawaban = new TextViewMyriad(this);
-            jawaban.setText(String.valueOf(q.getJawaban()));
-            ready.add(jawaban);
-            int j = ready.size();
-            for(int k = 0; k<j; k++) {
-                if(sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
-                    ready.get(k).setBackgroundDrawable( getResources().getDrawable(R.drawable.cellborder) );
-                } else {
-                    ready.get(k).setBackground( getResources().getDrawable(R.drawable.cellborder));
-                }
-                ready.get(k).setLayoutParams(new TableRow.LayoutParams(50, ViewGroup.LayoutParams.MATCH_PARENT));
-                ready.get(k).setPadding(3,3,3,3);
-                ready.get(k).setGravity(Gravity.CENTER_HORIZONTAL);
-                tableRow.addView(ready.get(k));
-            }
-            tabelQuest.addView(tableRow);
+            questions.add(q);
         }
     }
 }
