@@ -40,7 +40,8 @@
         <activity android:name=".LayananTanyaTutorAct" />
         <activity android:name=".FreeForumActivity" />
         <activity android:name=".ChatroomTanyaTutorActivity" />
-        <activity android:name=".ChatroomTutorActivity"></activity>
+        <activity android:name=".ChatroomTutorActivity" />
+        <activity android:name=".PhotoViewActivity"></activity>
     </application>
 
 </manifest>

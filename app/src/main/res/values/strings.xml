@@ -97,7 +97,7 @@
     <string name="choose_file">Choose file</string>
     <string name="selesai_jwb_soal">Selesai menjawab soal</string>
     <string name="jumlah_soal_jawab">Jumlah soal yang dijawab: </string>
-    
+
     <string name="jml_soal_ditanya_pengguna">Jumlah soal yang ditanya pengguna: </string>
     <string name="jml_soal_sudah_dijawab">Jumlah soal yang sudah dijawab: </string>
     <string name="soal_tersisa">Soal masih tersisa</string>
