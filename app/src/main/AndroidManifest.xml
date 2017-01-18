@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="nb.scode.tanyasoal">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -41,7 +43,9 @@
         <activity android:name=".FreeForumActivity" />
         <activity android:name=".ChatroomTanyaTutorActivity" />
         <activity android:name=".ChatroomTutorActivity" />
-        <activity android:name=".PhotoViewActivity"></activity>
+        <activity android:name=".PhotoViewActivity"
+            android:label="Foto"
+            android:theme="@style/PhotoViewTheme" />
     </application>
 
 </manifest>

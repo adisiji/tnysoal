@@ -56,7 +56,12 @@ public class AvailQuestionActivity extends BaseActivity {
             q.setSubjek(subjeks[i%5]);
             q.setSoal("Nomor 2 dan 3 ya kak");
             q.setPeriode(12);
-            q.setJawaban("Foto");
+            if(i%2==0){
+                q.setJawaban("Foto");
+            }
+            else {
+                q.setJawaban("Video");
+            }
             q.setSisaw(SystemClock.currentThreadTimeMillis());
             questions.add(q);
         }

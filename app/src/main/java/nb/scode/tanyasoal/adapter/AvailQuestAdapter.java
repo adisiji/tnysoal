@@ -56,10 +56,9 @@ public class AvailQuestAdapter extends RecyclerView.Adapter<AvailQuestAdapter.My
         return new MyViewHolder(itemView);
     }
 
-    private final String addio = ": ";
-
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
+        final String addio = ": ";
         holder.subjek.setText(addio + questionList.get(position).getSubjek());
         holder.nama.setText(addio + questionList.get(position).getNama());
         holder.level.setText(addio + questionList.get(position).getLvl());

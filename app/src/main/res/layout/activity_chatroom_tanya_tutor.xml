@@ -45,7 +45,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp" />
 
-    <uk.co.senab.photoview.PhotoView
+    <ImageView
         android:id="@+id/img_main_soal_chat"
         android:layout_width="match_parent"
         android:layout_height="120dp"
@@ -98,7 +98,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/white_box_stroke"/>
 
-    <uk.co.senab.photoview.PhotoView
+    <ImageView
         android:layout_width="180dp"
         android:layout_height="90dp"
         android:layout_below="@+id/bg_white_mainsoal"
@@ -140,7 +140,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/white_box_stroke"/>
 
-    <uk.co.senab.photoview.PhotoView
+    <ImageView
         android:layout_width="180dp"
         android:layout_height="90dp"
         android:layout_marginTop="15dp"

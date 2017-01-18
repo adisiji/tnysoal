@@ -89,4 +89,3 @@ public class LayTnyTutorAdapter extends BaseAdapter {
     }
 
 }
-
