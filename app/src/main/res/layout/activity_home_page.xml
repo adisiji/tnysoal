@@ -25,6 +25,7 @@
                 android:gravity="center_horizontal"/>
             <custom_font.TextViewMyriad
                 android:id="@+id/cat_aktivitas_home"
+                android:textStyle="normal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/welcome_dummy3"
@@ -32,6 +33,7 @@
                 android:textColor="@android:color/holo_blue_dark"/>
 
     <custom_font.TextViewMyriad
+        android:textStyle="normal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -39,68 +41,71 @@
         android:layout_marginRight="75dp"
         android:text="@string/isi_saldo"
         android:padding="12dp"
-        android:background="@drawable/blue_box_stroke"
+        android:background="@drawable/button_blue_box_stroke"
         android:textColor="@android:color/white"
         android:gravity="center_horizontal"
         android:id="@+id/btn_isiSaldo" />
 
     <custom_font.TextViewMyriad
-                android:id="@+id/btn_paketsedia"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="75dp"
-                android:layout_marginRight="75dp"
-                android:text="@string/paket_sedia"
-                android:padding="12dp"
-                android:background="@drawable/blue_box_stroke"
-                android:textColor="@android:color/white"
-                android:gravity="center_horizontal"/>
+        android:id="@+id/btn_paketsedia"
+        android:textStyle="normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:text="@string/paket_sedia"
+        android:padding="12dp"
+        android:background="@drawable/button_blue_box_stroke"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal"/>
 
-            <FrameLayout
-                android:id="@+id/btn_tny_tutor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#0f75ba"
-                android:layout_marginTop="40dp"
-                android:layout_marginLeft="75dp"
-                android:layout_marginRight="75dp"
-                android:paddingTop="30dp"
-                android:paddingBottom="30dp">
+    <FrameLayout
+        android:id="@+id/btn_tny_tutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_blue"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp">
 
-                <custom_font.TextViewMyriad
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tanya_tutor"
-                    android:padding="12dp"
-                    android:textColor="@android:color/white"
-                    android:gravity="center_horizontal"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginLeft="15dp"
-                    android:background="@drawable/round_transp"/>
-            </FrameLayout>
+        <custom_font.TextViewMyriad
+            android:textStyle="normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tanya_tutor"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/round_transp"/>
+    </FrameLayout>
 
-            <FrameLayout
-                android:id="@+id/btn_komunitas"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#0f75ba"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="75dp"
-                android:layout_marginRight="75dp"
-                android:paddingTop="30dp"
-                android:paddingBottom="30dp">
+    <FrameLayout
+        android:id="@+id/btn_komunitas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_blue"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp">
 
-                <custom_font.TextViewMyriad
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/komunitas"
-                    android:padding="12dp"
-                    android:textColor="@android:color/white"
-                    android:gravity="center_horizontal"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginLeft="15dp"
-                    android:background="@drawable/round_transp"/>
-            </FrameLayout>
+        <custom_font.TextViewMyriad
+            android:textStyle="normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/komunitas"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/round_transp"/>
+    </FrameLayout>
 
-        </LinearLayout>
+</LinearLayout>

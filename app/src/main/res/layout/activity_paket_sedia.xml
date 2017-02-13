@@ -49,6 +49,7 @@
 
                         <custom_font.TextViewMyriad
                             android:id="@+id/foto_langKiri"
+                            android:textStyle="normal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
@@ -60,7 +61,7 @@
                             android:padding="10dp"
                             android:background="@drawable/round_transp"/>
                         <custom_font.TextViewMyriad
-
+                            android:textStyle="normal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center_horizontal"
@@ -69,6 +70,7 @@
                             android:layout_marginTop="5dp"/>
                         <custom_font.TextViewMyriad
                             android:id="@+id/t2"
+                            android:textStyle="normal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/hari_5"
@@ -85,6 +87,7 @@
                         android:background="@android:color/white"
                         android:orientation="vertical">
                         <custom_font.TextViewMyriad
+                            android:textStyle="normal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/harga_40k"
@@ -96,6 +99,7 @@
                             android:layout_marginTop="3dp"
                             android:background="@android:color/black"/>
                         <custom_font.TextViewMyriad
+                            android:textStyle="normal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="3dp"
@@ -109,6 +113,7 @@
 
                 <custom_font.TextViewMyriad
                     android:id="@+id/btn_langfoto5"
+                    android:textStyle="normal"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:text="@string/aktifkan"
@@ -142,6 +147,7 @@
                         android:gravity="center_vertical">
 
                         <custom_font.TextViewMyriad
+                            android:textStyle="normal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
@@ -153,6 +159,7 @@
                             android:padding="10dp"
                             android:background="@drawable/round_transp"/>
                         <custom_font.TextViewMyriad
+                            android:textStyle="normal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center_horizontal"
@@ -161,6 +168,7 @@
                             android:layout_marginTop="5dp"/>
 
                         <custom_font.TextViewMyriad
+                            android:textStyle="normal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/hari_30"
@@ -176,6 +184,7 @@
                         android:background="@android:color/white"
                         android:orientation="vertical">
                         <custom_font.TextViewMyriad
+                            android:textStyle="normal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/harga_200k"
@@ -187,6 +196,7 @@
                             android:layout_marginTop="3dp"
                             android:background="@android:color/black"/>
                         <custom_font.TextViewMyriad
+                            android:textStyle="normal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="3dp"
@@ -200,6 +210,7 @@
 
                 <custom_font.TextViewMyriad
                     android:id="@+id/btn_lang_foto30"
+                    android:textStyle="normal"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:text="@string/aktifkan"
@@ -244,6 +255,7 @@
                     android:gravity="center_vertical">
 
                     <custom_font.TextViewMyriad
+                        android:textStyle="normal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -255,6 +267,7 @@
                         android:padding="10dp"
                         android:background="@drawable/round_transp"/>
                     <custom_font.TextViewMyriad
+                        android:textStyle="normal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
@@ -271,6 +284,7 @@
                     android:background="@android:color/white"
                     android:orientation="vertical">
                     <custom_font.TextViewMyriad
+                        android:textStyle="normal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/harga_4k_soal"
@@ -282,6 +296,7 @@
                         android:layout_marginTop="3dp"
                         android:background="@android:color/black"/>
                     <custom_font.TextViewMyriad
+                        android:textStyle="normal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
@@ -309,6 +324,7 @@
                     android:gravity="center_vertical">
 
                     <custom_font.TextViewMyriad
+                        android:textStyle="normal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -320,6 +336,7 @@
                         android:padding="10dp"
                         android:background="@drawable/round_transp"/>
                     <custom_font.TextViewMyriad
+                        android:textStyle="normal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
@@ -336,6 +353,7 @@
                     android:background="@android:color/white"
                     android:orientation="vertical">
                     <custom_font.TextViewMyriad
+                        android:textStyle="normal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/harga_6k_soal"
@@ -347,6 +365,7 @@
                         android:layout_marginTop="3dp"
                         android:background="@android:color/black"/>
                     <custom_font.TextViewMyriad
+                        android:textStyle="normal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"

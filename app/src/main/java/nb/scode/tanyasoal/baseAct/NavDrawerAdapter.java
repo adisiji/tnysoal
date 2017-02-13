@@ -13,11 +13,6 @@ public class NavDrawerAdapter extends RecyclerView.Adapter<NavDrawerAdapter.View
 
     private String[] titles;
     private Context context;
-    private setDrawerAct setact;
-
-    public void setActDrawer(setDrawerAct setact){
-        this.setact = setact;
-    }
 
     // The default constructor to receive titles,icons and context from MainActivity.
     public NavDrawerAdapter(String[] titles , Context context){
@@ -50,11 +45,6 @@ public class NavDrawerAdapter extends RecyclerView.Adapter<NavDrawerAdapter.View
         }
     }
 
-    /**
-     *This is called every time when we need a new ViewHolder and a new ViewHolder is required for every item in RecyclerView.
-     *Then this ViewHolder is passed to onBindViewHolder to display items.
-     */
-
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
@@ -73,27 +63,16 @@ public class NavDrawerAdapter extends RecyclerView.Adapter<NavDrawerAdapter.View
      */
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, final int position) {
 
         holder.navTitle.setText(titles[position]);
 
     }
 
-    /**
-     *It returns the total no. of items . We +1 count to include the header view.
-     *So , it the total count is 5 , the method returns 6.
-     *This 6 implies that there are 5 row_items and 1 header view with header at position zero.
-     */
-
     @Override
     public int getItemCount() {
 
         return titles.length;
-    }
-
-
-    public interface setDrawerAct{
-        void onClick(int pos);
     }
 
 }

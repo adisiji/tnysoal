@@ -16,7 +16,7 @@ public class LayananTanyaTutorAct extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layanan_tanya_tutor);
-
+        isBack = true;
         GridView gridView = (GridView) findViewById(R.id.gridview);
         Question cards[] = new Question[50];
         for(int i = 0;i<cards.length;i++){

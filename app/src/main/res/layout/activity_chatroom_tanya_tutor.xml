@@ -16,11 +16,12 @@
         android:id="@+id/btn_tanya_tutor"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/round_red"
+        android:background="@drawable/button_round_red"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp">
         <custom_font.TextViewMyriad
+            android:textStyle="normal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Tanya Tutor"
@@ -57,6 +58,7 @@
 
     <custom_font.TextViewMyriad
         android:id="@+id/jwb_dengan_chat"
+        android:textStyle="normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/dummy_jawab_dengan"
@@ -66,6 +68,7 @@
          />
 
     <custom_font.TextViewMyriad
+        android:textStyle="normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/dummy_sma3"
@@ -74,6 +77,7 @@
         android:layout_alignStart="@+id/img_main_soal_chat"/>
 
     <custom_font.TextViewMyriad
+        android:textStyle="normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/edit"
@@ -110,6 +114,7 @@
         android:id="@+id/img_jawaban1" />
 
     <custom_font.TextViewMyriad
+        android:textStyle="normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/view_jawaban1"
@@ -121,6 +126,7 @@
         android:textSize="12sp"/>
 
     <custom_font.TextViewMyriad
+        android:textStyle="normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/img_jawaban1"
@@ -151,6 +157,7 @@
         android:id="@+id/img_jawaban2" />
 
     <custom_font.TextViewMyriad
+        android:textStyle="normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/view_jawaban2"
@@ -162,6 +169,7 @@
         android:textSize="12sp"/>
 
     <custom_font.TextViewMyriad
+        android:textStyle="normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/img_jawaban2"
@@ -183,6 +191,7 @@
         android:id="@+id/editTextMyriad" />
 
     <custom_font.TextViewMyriad
+        android:textStyle="normal"
         android:id="@+id/btn_tny_soal_baru"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -197,7 +206,8 @@
         android:layout_marginRight="10dp"
         android:layout_marginEnd="10dp"
         android:gravity="center"
-        android:background="@color/prim_red"
+        android:clickable="true"
+        android:background="@drawable/button_red_bg"
         android:textColor="@android:color/white"/>
 
     <View
@@ -211,6 +221,7 @@
         android:layout_marginLeft="10dp"/>
 
     <custom_font.TextViewMyriad
+        android:textStyle="normal"
         android:text="Rating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

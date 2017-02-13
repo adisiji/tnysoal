@@ -17,6 +17,7 @@
 
     <custom_font.TextViewMyriad
         android:id="@+id/btn_tny_soal_baru"
+        android:textStyle="normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tanya_soal_baru"
@@ -27,7 +28,7 @@
         android:paddingRight="15dp"
         android:layout_marginLeft="5dp"
         android:layout_marginStart="5dp"
-        android:background="@color/prim_red"
+        android:background="@drawable/button_red_bg"
         android:textColor="@android:color/white"/>
 
     <custom_font.EditTextMyriad

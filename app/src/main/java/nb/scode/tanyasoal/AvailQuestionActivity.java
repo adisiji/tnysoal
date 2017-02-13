@@ -2,11 +2,13 @@ package nb.scode.tanyasoal;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.SystemClock;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +22,8 @@ import nb.scode.tanyasoal.models.Question;
 
 public class AvailQuestionActivity extends BaseActivity {
 
+    private Boolean isDoubleBackToExit = false;
+
     private final int sdk = android.os.Build.VERSION.SDK_INT;
     @BindArray(R.array.tkt_akademik_array) String[] tingkat;
     @BindArray(R.array.subjekItems)String[] subjeks;
@@ -31,6 +35,7 @@ public class AvailQuestionActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_avail_question);
         ButterKnife.bind(this);
+        isHome = true;
         getBackToolbar().setEnabled(false);
         setModelSoal();
         AvailQuestAdapter adapter = new AvailQuestAdapter(questions);
@@ -64,6 +69,34 @@ public class AvailQuestionActivity extends BaseActivity {
             }
             q.setSisaw(SystemClock.currentThreadTimeMillis());
             questions.add(q);
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        if (drawerFragment.isDrawerOpen()) {
+
+            drawerFragment.closeDrawer();
+
+        } else {
+
+            if (isDoubleBackToExit) {
+                super.onBackPressed();
+                Intent i = new Intent(getApplicationContext(),LoginActivity.class);
+                startActivity(i);
+                finish();
+            }
+            if (!isDoubleBackToExit) {
+                Toast.makeText(this, getString(R.string.tap_exit), Toast.LENGTH_SHORT).show();
+            }
+            this.isDoubleBackToExit = true;
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    isDoubleBackToExit = false;
+                }
+            }, 2000); //delay 2 detik
         }
     }
 }

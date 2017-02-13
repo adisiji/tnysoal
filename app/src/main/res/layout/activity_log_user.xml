@@ -41,6 +41,7 @@
             android:id="@+id/tableRow1"
             android:layout_width="match_parent">
             <custom_font.TextViewMyriad
+                android:textStyle="normal"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/cellborder"
@@ -49,6 +50,7 @@
                 android:gravity="center"
                 android:padding="3dp"/>
             <custom_font.TextViewMyriad
+                android:textStyle="normal"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/cellborder"
@@ -57,6 +59,7 @@
                 android:gravity="center"
                 android:padding="3dp"/>
             <custom_font.TextViewMyriad
+                android:textStyle="normal"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/cellborder"

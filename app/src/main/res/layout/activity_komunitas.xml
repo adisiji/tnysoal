@@ -18,12 +18,13 @@
                 android:layout_marginLeft="80dp"
                 android:layout_marginRight="80dp"
                 android:layout_marginTop="20dp"
-                android:background="#0f75ba"
+                android:background="@drawable/button_blue"
                 android:paddingTop="30dp"
                 android:paddingBottom="30dp"
                   >
 
                 <custom_font.TextViewMyriad
+                    android:textStyle="normal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/fre_forum"
@@ -44,12 +45,13 @@
                 android:layout_marginLeft="80dp"
                 android:layout_marginRight="80dp"
                 android:layout_marginTop="5dp"
-                android:background="#0f75ba"
+                android:background="@drawable/button_blue"
                 android:paddingTop="30dp"
                 android:paddingBottom="30dp"
-                 >
+                android:clickable="true" >
 
                 <custom_font.TextViewMyriad
+                    android:textStyle="normal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/artikel"
@@ -69,12 +71,13 @@
                 android:layout_marginLeft="80dp"
                 android:layout_marginRight="80dp"
                 android:layout_marginTop="5dp"
-                android:background="#0f75ba"
+                android:background="@drawable/button_blue"
                 android:paddingTop="30dp"
                 android:paddingBottom="30dp"
-                 >
+                android:clickable="true" >
 
                 <custom_font.TextViewMyriad
+                    android:textStyle="normal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/video"
@@ -94,12 +97,13 @@
                 android:layout_marginLeft="80dp"
                 android:layout_marginRight="80dp"
                 android:layout_marginTop="5dp"
-                android:background="#0f75ba"
+                android:background="@drawable/button_blue"
                 android:paddingTop="30dp"
                 android:paddingBottom="30dp"
-                 >
+                android:clickable="true" >
 
                 <custom_font.TextViewMyriad
+                    android:textStyle="normal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/soal_menarik"
@@ -119,12 +123,13 @@
                 android:layout_marginLeft="80dp"
                 android:layout_marginRight="80dp"
                 android:layout_marginTop="5dp"
-                android:background="#0f75ba"
+                android:background="@drawable/button_blue"
                 android:paddingTop="30dp"
                 android:paddingBottom="30dp"
-                 >
+                android:clickable="true" >
 
                 <custom_font.TextViewMyriad
+                    android:textStyle="normal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/xxx"
@@ -145,12 +150,13 @@
                 android:layout_marginRight="80dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="50dp"
-                android:background="#0f75ba"
+                android:background="@drawable/button_blue"
                 android:paddingTop="30dp"
                 android:paddingBottom="30dp"
-                 >
+                android:clickable="true" >
 
                 <custom_font.TextViewMyriad
+                    android:textStyle="normal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/lainnya"

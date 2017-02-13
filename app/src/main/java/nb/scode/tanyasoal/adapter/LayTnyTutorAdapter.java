@@ -1,13 +1,18 @@
 package nb.scode.tanyasoal.adapter;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.RelativeLayout;
 
+import butterknife.BindDrawable;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import custom_font.TextViewMyriad;
@@ -52,7 +57,7 @@ public class LayTnyTutorAdapter extends BaseAdapter {
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
-        ViewHolder holder;
+        final ViewHolder holder;
         Question card = questionz[position];
         if (convertView != null) {
             holder = (ViewHolder) convertView.getTag();
@@ -64,10 +69,29 @@ public class LayTnyTutorAdapter extends BaseAdapter {
         }
         holder.ratingBar.setRating(4);
         holder.soal.setText(card.getSoal());
-        holder.rl.setOnClickListener(new View.OnClickListener() {
+        holder.rl.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View view) {
-                actionCard.onClick(position);
+            public boolean onTouch(View view, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    holder.rl.setBackground(holder.white_pressed);
+                    holder.ll1.setBackground(holder.blue_pressed);
+                    holder.ll2.setBackground(holder.blue_pressed);
+                    Log.d("DEBUG::", "ACTION DOWN=======");
+                }
+                else if(event.getAction() == MotionEvent.ACTION_MOVE){
+                    holder.rl.setBackground(holder.white_normal);
+                    holder.ll1.setBackground(holder.blue_normal);
+                    holder.ll2.setBackground(holder.blue_normal);
+                    Log.d("DEBUG::", "ACTION MOVE=======");
+                }
+                else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    holder.rl.setBackground(holder.white_normal);
+                    holder.ll1.setBackground(holder.blue_normal);
+                    holder.ll2.setBackground(holder.blue_normal);
+                    actionCard.onClick(position);
+                    Log.d("DEBUG::", "ACTION UP=======");
+                }
+                return true;
             }
         });
 
@@ -77,8 +101,20 @@ public class LayTnyTutorAdapter extends BaseAdapter {
     static class ViewHolder{
         @BindView(R.id.isi_soal_layanan) TextViewMyriad soal;
         @BindView(R.id.rating_tanya) RatingBar ratingBar;
-        @BindView(R.id.rl_root_laytanya) RelativeLayout rl;
-
+        @BindView(R.id.rl_root_laytanya)
+        RelativeLayout rl;
+        @BindView(R.id.row2_card_tanya)
+        LinearLayout ll1;
+        @BindView(R.id.card_rating_bar)
+        LinearLayout ll2;
+        @BindDrawable(R.drawable.dark_soft_blue_box)
+        Drawable blue_pressed;
+        @BindDrawable(R.drawable.soft_blue_box)
+        Drawable blue_normal;
+        @BindDrawable(R.drawable.white_box_grey_stroke)
+        Drawable white_normal;
+        @BindDrawable(R.drawable.white_box_greystr_selected)
+        Drawable white_pressed;
         public ViewHolder(View view) {
             ButterKnife.bind(this, view);
         }

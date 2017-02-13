@@ -7,12 +7,15 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.google.firebase.iid.FirebaseInstanceId;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import custom_font.*;
+import nb.scode.tanyasoal.app.App;
 import nb.scode.tanyasoal.baseAct.BaseFirstActivity;
+import nb.scode.tanyasoal.util.SavedUser;
 
 public class LoginActivity extends BaseFirstActivity {
 
@@ -26,10 +29,14 @@ public class LoginActivity extends BaseFirstActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
+        isHome = true;
         Glide.with(this).load(R.drawable.logo_fix).asBitmap().fitCenter().into(logoTop);
         getBack().setVisibility(View.GONE);
         getProfile().setVisibility(View.GONE);
         getMail().setVisibility(View.GONE);
+        String refreshedToken = FirebaseInstanceId.getInstance().getToken();
+        App.getInstance().setGcmToken(refreshedToken);
+
     }
 
     @OnClick(R.id.btn_daftar)
@@ -44,11 +51,13 @@ public class LoginActivity extends BaseFirstActivity {
         String pss = pass.getText().toString().trim();
         if(mail.equals("user") && pss.equals("user")) {
             Intent iu = new Intent(LoginActivity.this, HomePageActivity.class);
+            SavedUser.putUser(getApplicationContext(), "user");
             startActivity(iu);
             finish();
         }
         else if(mail.equals("tutor") && pss.equals("tutor")) {
             Intent iu = new Intent(LoginActivity.this, AvailQuestionActivity.class);
+            SavedUser.putUser(getApplicationContext(), "tutor");
             startActivity(iu);
             finish();
         }
@@ -61,6 +70,12 @@ public class LoginActivity extends BaseFirstActivity {
     void forgot(){
         Intent i = new Intent(getApplicationContext(), LupaPassActivity.class);
         startActivity(i);
+    }
+
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        finish();
     }
 
 }

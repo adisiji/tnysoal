@@ -14,6 +14,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import custom_font.EditTextMyriad;
 import custom_font.TextViewMyriad;
 import nb.scode.tanyasoal.R;
 import nb.scode.tanyasoal.models.Question;
@@ -37,7 +38,8 @@ public class RootFreeForumAdapter extends RecyclerView.Adapter<RootFreeForumAdap
         @BindView(R.id.content_freeforum) TextViewMyriad content;
         @BindView(R.id.rv_reply_freeforum) RecyclerView rv_reply;
         @BindView(R.id.dropdown_root_forum) ImageView imageView;
-
+        @BindView(R.id.btn_reply_freeforum) TextViewMyriad btnReply;
+        @BindView(R.id.ed_jawab) EditTextMyriad inputReply;
         public MyViewHolder(View view) {
             super(view);
             ButterKnife.bind(this,view);
@@ -59,7 +61,7 @@ public class RootFreeForumAdapter extends RecyclerView.Adapter<RootFreeForumAdap
     }
 
     @Override
-    public void onBindViewHolder(MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final MyViewHolder holder, final int position) {
         LinearLayoutManager llm = new LinearLayoutManager(context);
         holder.rv_reply.setLayoutManager(llm);
         holder.rv_reply.setAdapter(adapterReply);
@@ -74,7 +76,16 @@ public class RootFreeForumAdapter extends RecyclerView.Adapter<RootFreeForumAdap
                 actionRoot.onClickDrop(position, view);
             }
         });
-
+        holder.btnReply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(holder.inputReply.getVisibility()==View.GONE)
+                    holder.inputReply.setVisibility(View.VISIBLE);
+                else {
+                    holder.inputReply.setVisibility(View.GONE);
+                }
+            }
+        });
     }
 
     @Override
@@ -84,6 +95,7 @@ public class RootFreeForumAdapter extends RecyclerView.Adapter<RootFreeForumAdap
 
     public interface ActionRoot{
         void onClickDrop(int position, View view);
+        void onClickReply(int position, View view);
     }
 
 }

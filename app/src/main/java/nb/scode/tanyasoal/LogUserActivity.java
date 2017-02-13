@@ -27,6 +27,7 @@ public class LogUserActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_user);
         ButterKnife.bind(this);
+        isBack = true;
         setModelAktivitas();
     }
 

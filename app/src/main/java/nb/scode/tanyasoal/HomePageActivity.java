@@ -19,7 +19,7 @@ public class HomePageActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
         ButterKnife.bind(this);
-
+        isHome = true;
         getBackToolbar().setVisibility(View.GONE);
     }
 
@@ -64,6 +64,8 @@ public class HomePageActivity extends BaseActivity {
 
             if (isDoubleBackToExit) {
                 super.onBackPressed();
+                Intent i = new Intent(getApplicationContext(),LoginActivity.class);
+                startActivity(i);
                 finish();
             }
             if (!isDoubleBackToExit) {

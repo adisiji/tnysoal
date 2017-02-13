@@ -2,10 +2,13 @@ package nb.scode.tanyasoal;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.animation.GlideAnimation;
+import com.bumptech.glide.request.target.SimpleTarget;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -16,6 +19,8 @@ public class ChatroomTanyaTutorActivity extends BaseActivity {
     @BindView(R.id.img_jawaban1) ImageView jawaban1;
     @BindView(R.id.img_jawaban2) ImageView jawaban2;
 
+    Bitmap jawab1,jawab2,soal; //we will send this pict via intent
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,16 +29,36 @@ public class ChatroomTanyaTutorActivity extends BaseActivity {
 
         Glide.with(context).load(R.drawable.jawab_soal1)
                 .asBitmap()
-                .into(jawaban1);
+                .into(new SimpleTarget<Bitmap>() {
+                    @Override
+                    public void onResourceReady(Bitmap resource, GlideAnimation glideAnimation) {
+                        jawaban1.setImageBitmap(resource);
+                        jawab1 = resource;
+                    }
+                });
+
         Glide.with(context)
                 .load(R.drawable.jawab_soal1)
                 .asBitmap()
-                .into(jawaban2);
+                .into(new SimpleTarget<Bitmap>() {
+                    @Override
+                    public void onResourceReady(Bitmap resource, GlideAnimation glideAnimation) {
+                        jawaban2.setImageBitmap(resource);
+                        jawab2 = resource;
+                    }
+                });
+
         Glide.with(context)
                 .load(R.drawable.pict_soal1)
                 .asBitmap()
                 .fitCenter()
-                .into(mainsoal);
+                .into(new SimpleTarget<Bitmap>() {
+                    @Override
+                    public void onResourceReady(Bitmap resource, GlideAnimation glideAnimation) {
+                        mainsoal.setImageBitmap(resource);
+                        soal = resource;
+                    }
+                });
     }
 
     @OnClick(R.id.btn_tanya_tutor)
@@ -42,9 +67,17 @@ public class ChatroomTanyaTutorActivity extends BaseActivity {
         startActivity(i);
     }
 
-    @OnClick({R.id.img_main_soal_chat,R.id.img_jawaban1,R.id.img_jawaban2})
+    @OnClick({R.id.img_jawaban1,R.id.img_jawaban2})
     void viewPhoto(){
         Intent i = new Intent(getApplicationContext(), PhotoViewActivity.class);
+        i.putExtra("pict", jawab1);
+        startActivity(i);
+    }
+
+    @OnClick(R.id.img_main_soal_chat)
+    void viewSoal(){
+        Intent i = new Intent(getApplicationContext(), PhotoViewActivity.class);
+        i.putExtra("pict", soal);
         startActivity(i);
     }
 }

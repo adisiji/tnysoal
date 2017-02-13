@@ -4,7 +4,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/grad_login"
-    tools:context="nb.scode.tanyasoal.ChatroomTutorActivity">
+    tools:context="nb.scode.tanyasoal.ChatroomTutorActivity"
+    android:animateLayoutChanges="true">
 
     <RelativeLayout
         android:id="@+id/activity_chatroom_tanya_tutor"
@@ -13,6 +14,7 @@
         >
 
         <custom_font.TextViewMyriad
+            android:textStyle="normal"
             android:id="@+id/header1_chatroom_tutor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -23,6 +25,7 @@
             android:layout_alignParentTop="true"/>
 
         <custom_font.TextViewMyriad
+            android:textStyle="normal"
             android:id="@+id/header2_chatroom_tutor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,6 +56,7 @@
             />
 
         <custom_font.TextViewMyriad
+            android:textStyle="normal"
             android:id="@+id/jwb_dengan_chat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -63,6 +67,7 @@
             />
 
         <custom_font.TextViewMyriad
+            android:textStyle="normal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/dummy_sma3"
@@ -71,6 +76,7 @@
             android:layout_alignStart="@+id/img_main_soal_chat"/>
 
         <custom_font.TextViewMyriad
+            android:textStyle="normal"
             android:id="@+id/btn_pass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -87,6 +93,7 @@
             android:layout_alignEnd="@+id/img_main_soal_chat" />
 
         <custom_font.TextViewMyriad
+            android:textStyle="normal"
             android:id="@+id/btn_book"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -124,6 +131,7 @@
             android:id="@+id/img_jawaban1" />
 
         <custom_font.TextViewMyriad
+            android:textStyle="normal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@id/view_jawaban1"
@@ -135,6 +143,7 @@
             android:textSize="12sp"/>
 
         <custom_font.TextViewMyriad
+            android:textStyle="normal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_jawaban1"
@@ -165,6 +174,7 @@
             android:id="@+id/img_jawaban2" />
 
         <custom_font.TextViewMyriad
+            android:textStyle="normal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@id/view_jawaban2"
@@ -176,6 +186,7 @@
             android:textSize="12sp"/>
 
         <custom_font.TextViewMyriad
+            android:textStyle="normal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_jawaban2"
@@ -197,6 +208,7 @@
             android:id="@+id/editTextMyriad" />
 
         <custom_font.TextViewMyriad
+            android:textStyle="normal"
             android:id="@+id/btn_choose_file"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -209,31 +221,38 @@
             android:layout_below="@id/editTextMyriad"
             android:layout_alignLeft="@id/editTextMyriad"
             android:layout_alignStart="@id/editTextMyriad"/>
+        <LinearLayout
+            android:id="@+id/root_cekselesai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/editTextMyriad"
+            android:layout_toRightOf="@+id/btn_choose_file"
+            android:layout_toEndOf="@+id/btn_choose_file">
 
         <CheckBox
             android:text="@string/selesai_jwb_soal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editTextMyriad"
-            android:layout_toRightOf="@+id/btn_choose_file"
-            android:layout_toEndOf="@+id/btn_choose_file"
             android:checkMark="?android:attr/listChoiceIndicatorMultiple"
             android:checked="true"
             android:gravity="center_vertical"
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:id="@+id/cek_selesai_jawab_soal" />
+        <LinearLayout
+            android:id="@+id/root_soalterjawab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
         <custom_font.TextViewMyriad
+            android:textStyle="normal"
             android:id="@+id/tv_jml_soal_jawab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/jumlah_soal_jawab"
-            android:layout_alignLeft="@id/cek_selesai_jawab_soal"
-            android:layout_alignStart="@id/cek_selesai_jawab_soal"
             android:layout_marginLeft="32dp"
-            android:textColor="@android:color/black"
-            android:layout_below="@id/cek_selesai_jawab_soal"/>
+            android:textColor="@android:color/black"/>
 
         <custom_font.EditTextMyriad
             android:id="@+id/ed_soal_terjawab"
@@ -243,9 +262,11 @@
             android:layout_marginLeft="5dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/white_box_grey_stroke"
-            android:layout_toRightOf="@id/tv_jml_soal_jawab"
-            android:layout_below="@id/cek_selesai_jawab_soal"
             />
+
+        </LinearLayout>
+
+        </LinearLayout>
 
         <CheckBox
             android:id="@+id/cek_soal_tersisa"
@@ -256,10 +277,11 @@
             android:text="@string/soal_tersisa"
             android:layout_toRightOf="@+id/btn_choose_file"
             android:layout_toEndOf="@+id/btn_choose_file"
-            android:layout_below="@id/tv_jml_soal_jawab"/>
+            android:layout_below="@id/root_cekselesai"/>
 
         <custom_font.TextViewMyriad
             android:id="@+id/btn_tny_soal_baru"
+            android:textStyle="normal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/kirim"

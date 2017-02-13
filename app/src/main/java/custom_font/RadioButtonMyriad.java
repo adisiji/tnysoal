@@ -28,7 +28,7 @@ public class RadioButtonMyriad extends RadioButton {
 
     private void init() {
         if (!isInEditMode()) {
-            Typeface tf = FontCache.get("fonts/MyriadPro-Regular.otf", getContext());
+            Typeface tf = FontCache.get("MyriadPro-Regular.otf", getContext());
             setTypeface(tf);
         }
     }

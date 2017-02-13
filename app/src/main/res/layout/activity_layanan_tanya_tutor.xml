@@ -11,11 +11,12 @@
         android:id="@+id/btn_tanya_tutor"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/round_red"
+        android:background="@drawable/button_round_red"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp">
         <custom_font.TextViewMyriad
+            android:textStyle="normal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Tanya Tutor"

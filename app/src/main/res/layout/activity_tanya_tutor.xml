@@ -39,6 +39,7 @@
             android:orientation="horizontal">
 
             <custom_font.TextViewMyriad
+                android:textStyle="normal"
                 android:layout_width="200dp"
                 android:layout_height="match_parent"
                 android:text="@string/jml_soal_ditanya"
@@ -61,6 +62,7 @@
             android:layout_marginTop="10dp">
 
             <custom_font.TextViewMyriad
+                android:textStyle="normal"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:text="@string/camera"
@@ -69,6 +71,7 @@
                 android:background="@drawable/grey_box_stroke"/>
 
             <custom_font.TextViewMyriad
+                android:textStyle="normal"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:text="@string/gallery"
@@ -80,6 +83,7 @@
         </LinearLayout>
 
         <custom_font.TextViewMyriad
+            android:textStyle="normal"
             android:id="@+id/judul_pil_subjek"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -103,7 +107,7 @@
 
             <custom_font.RadioButtonMyriad
                 android:layout_width="95dp"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:text="@string/matematika"
                 android:button="@null"
                 android:textColor="@drawable/subjek_textcolor_selector"
@@ -115,7 +119,7 @@
 
             <custom_font.RadioButtonMyriad
                 android:layout_width="95dp"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:text="@string/fisika"
                 android:button="@null"
                 android:textColor="@drawable/subjek_textcolor_selector"
@@ -125,7 +129,7 @@
 
             <custom_font.RadioButtonMyriad
                 android:layout_width="95dp"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:text="@string/kimia"
                 android:button="@null"
                 android:textColor="@drawable/subjek_textcolor_selector"
@@ -135,7 +139,7 @@
 
             <custom_font.RadioButtonMyriad
                 android:layout_width="95dp"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:text="@string/biologi"
                 android:button="@null"
                 android:textColor="@drawable/subjek_textcolor_selector"
@@ -145,7 +149,7 @@
 
             <custom_font.RadioButtonMyriad
                 android:layout_width="95dp"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:padding="10dp"
                 android:button="@null"
                 android:textColor="@drawable/subjek_textcolor_selector"
@@ -157,6 +161,7 @@
 
         <custom_font.TextViewMyriad
             android:id="@+id/judul_jwb_dengan"
+            android:textStyle="normal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/root3"
@@ -208,6 +213,7 @@
 
         <custom_font.TextViewMyriad
             android:id="@+id/judul_jml_soal_hari"
+            android:textStyle="normal"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
@@ -219,6 +225,7 @@
 
         <custom_font.TextViewMyriad
             android:id="@+id/judul_jml_soal_bln"
+            android:textStyle="normal"
             android:layout_below="@id/judul_jml_soal_hari"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -229,6 +236,7 @@
 
         <custom_font.TextViewMyriad
             android:id="@+id/jml_soal_bln_ini"
+            android:textStyle="normal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="40 soal"
@@ -238,6 +246,7 @@
 
         <custom_font.TextViewMyriad
             android:id="@+id/jml_soal_hari_ini"
+            android:textStyle="normal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="10 soal"
@@ -256,17 +265,20 @@
             android:layout_marginBottom="20dp">
 
             <custom_font.TextViewMyriad
+                android:textStyle="normal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/kirim"
                 android:padding="8dp"
-                android:background="@color/prim_red"
+                android:background="@drawable/button_red_bg"
                 android:gravity="center_horizontal"
                 android:layout_marginRight="@dimen/margin_left_right_30"
                 android:layout_marginLeft="@dimen/margin_left_right_30"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/white"
+                android:clickable="true"/>
 
             <custom_font.TextViewMyriad
+                android:textStyle="normal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/batal"

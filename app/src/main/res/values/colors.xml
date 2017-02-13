@@ -17,4 +17,7 @@
     <color name="soft_grey">#e4e5e7</color>
     <color name="bg_btn_banner">#f05a42</color>
     <color name="txt_black">#424242</color>
+
+    <color name="blue_button_normal">#0f75ba</color>
+    <color name="blue_button_pressed">#0b5a8f</color>
 </resources>

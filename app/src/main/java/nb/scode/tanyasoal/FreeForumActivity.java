@@ -56,6 +56,11 @@ public class FreeForumActivity extends BaseActivity {
             public void onClickDrop(int position, View view) {
                 showPopup(view);
             }
+
+            @Override
+            public void onClickReply(int pos, View view){
+
+            }
         });
         rv.setAdapter(adapter);
     }

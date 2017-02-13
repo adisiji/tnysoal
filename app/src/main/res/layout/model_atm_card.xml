@@ -21,6 +21,7 @@
 
     <custom_font.TextViewMyriad
         android:id="@+id/title_atm_card"
+        android:textStyle="normal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="ATM BCA"

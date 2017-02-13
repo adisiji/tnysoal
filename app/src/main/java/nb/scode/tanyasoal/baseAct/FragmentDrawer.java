@@ -76,8 +76,6 @@ public class FragmentDrawer extends Fragment{
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // drawer labels
-
         navTitles = getActivity().getResources().getStringArray(R.array.navDrawerItems2);
         //navIcons = getActivity().getResources().obtainTypedArray(R.array.navDrawerIcons);
     }

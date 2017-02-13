@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "391953562333",
+    "firebase_url": "https://tanyasoal-a837a.firebaseio.com",
+    "project_id": "tanyasoal-a837a",
+    "storage_bucket": "tanyasoal-a837a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391953562333:android:d0a7b4ce2739f87f",
+        "android_client_info": {
+          "package_name": "nb.scode.tanyasoal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391953562333-36i1695qo28okvnml2hdc69u0p92tuja.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "nb.scode.tanyasoal",
+            "certificate_hash": "9956019E2457CF497FF4A80793EDFFDA751548FE"
+          }
+        },
+        {
+          "client_id": "391953562333-4hq7qb5jom5d57ciqllnl2bejn84q8uf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADa9AdYmKmM-w9JjLLbF-EshZKnOQvs74"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391953562333-4hq7qb5jom5d57ciqllnl2bejn84q8uf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

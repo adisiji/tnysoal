@@ -15,6 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/subjek"
+        android:textStyle="bold"
         android:id="@+id/tv_subjek_q"
         android:layout_marginStart="5dp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -32,6 +33,7 @@
         app:layout_constraintLeft_toLeftOf="parent" />
 
     <custom_font.TextViewMyriad
+        android:textStyle="normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nama"
@@ -44,6 +46,7 @@
 
     <custom_font.TextViewMyriad
         android:id="@+id/tv_level_q"
+        android:textStyle="normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/level"
@@ -55,6 +58,7 @@
 
     <custom_font.TextViewMyriad
         android:id="@+id/tv_tutor_q"
+        android:textStyle="normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tutor"
@@ -69,6 +73,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text=": Fisika"
+        android:textStyle="bold"
         android:layout_marginEnd="5dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginRight="5dp"
@@ -77,6 +82,7 @@
 
     <custom_font.TextViewMyriad
         android:id="@+id/content_nama_q"
+        android:textStyle="normal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text=": Edo"
@@ -87,6 +93,7 @@
 
     <custom_font.TextViewMyriad
         android:id="@+id/content_level_q"
+        android:textStyle="normal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text=": Kelas 4 SD"
@@ -96,6 +103,7 @@
 
     <custom_font.TextViewMyriad
         android:id="@+id/content_tutor_q"
+        android:textStyle="normal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text=": Budi"
@@ -105,6 +113,7 @@
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_tutor_q"/>
 
     <custom_font.TextViewMyriad
+        android:textStyle="normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=": 12 jam"
@@ -117,6 +126,7 @@
 
     <custom_font.TextViewMyriad
         android:text=": 4 jam"
+        android:textStyle="bold"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintRight_toRightOf="parent"
@@ -127,6 +137,7 @@
         android:layout_marginEnd="5dp" />
 
     <custom_font.TextViewMyriad
+        android:textStyle="normal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text=": Video"
@@ -141,12 +152,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sisa_waktu"
+        android:textStyle="bold"
         app:layout_constraintRight_toLeftOf="@id/content_sisawaktu_q"
         android:layout_marginRight="5dp"
         android:layout_marginEnd="5dp"
         android:id="@+id/tv_sisawaktu_q"/>
 
     <custom_font.TextViewMyriad
+        android:textStyle="normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/periode"
@@ -156,6 +169,7 @@
         android:layout_marginEnd="5dp"/>
 
     <custom_font.TextViewMyriad
+        android:textStyle="normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/jawaban"

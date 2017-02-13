@@ -9,6 +9,7 @@
     tools:context="nb.scode.tanyasoal.LupaPassActivity">
 
     <custom_font.TextViewMyriad
+        android:textStyle="normal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/lupa_sandi"
@@ -26,6 +27,7 @@
         android:layout_marginTop="30dp">
 
         <custom_font.TextViewMyriad
+            android:textStyle="normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
@@ -59,6 +61,7 @@
         android:layout_marginTop="10dp">
 
         <custom_font.TextViewMyriad
+            android:textStyle="normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
@@ -92,6 +95,7 @@
         android:layout_marginTop="10dp">
 
         <custom_font.TextViewMyriad
+            android:textStyle="normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
@@ -125,6 +129,7 @@
         android:layout_marginTop="10dp">
 
         <custom_font.TextViewMyriad
+            android:textStyle="normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
@@ -151,6 +156,7 @@
 
     <custom_font.TextViewMyriad
         android:id="@+id/btn_kirim_sandi"
+        android:textStyle="normal"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@color/prim_red"

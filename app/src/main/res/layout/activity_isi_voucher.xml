@@ -21,6 +21,7 @@
 
     <custom_font.TextViewMyriad
         android:id="@+id/aktifateVoucher"
+        android:textStyle="normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/aktif_kd_voucher"
@@ -50,6 +51,7 @@
 
     <custom_font.TextViewMyriad
         android:id="@+id/kd244"
+        android:textStyle="normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/digit_kd_24"
@@ -60,9 +62,10 @@
 
     <custom_font.TextViewMyriad
         android:id="@+id/btn_kirim_voucher"
+        android:textStyle="normal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/prim_red"
+        android:background="@drawable/button_red_bg"
         android:layout_below="@id/kd244"
         android:layout_marginTop="25dp"
         android:text="@string/kirim"
@@ -75,6 +78,7 @@
 
     <custom_font.TextViewMyriad
         android:id="@+id/btn_batal_voucher"
+        android:textStyle="normal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/grey_bg_btn"

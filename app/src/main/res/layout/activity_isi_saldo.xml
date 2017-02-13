@@ -19,11 +19,12 @@
             android:id="@+id/btn_voucher"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:background="#0f75ba"
+            android:background="@drawable/button_blue"
             android:paddingTop="20dp"
             android:paddingBottom="20dp">
 
             <custom_font.TextViewMyriad
+                android:textStyle="normal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/voucher"
@@ -39,12 +40,14 @@
             android:id="@+id/btn_alfamart"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:background="#0f75ba"
+            android:background="@drawable/button_blue"
             android:layout_marginLeft="5dp"
             android:paddingTop="20dp"
-            android:paddingBottom="20dp">
+            android:paddingBottom="20dp"
+            android:clickable="true">
 
             <custom_font.TextViewMyriad
+                android:textStyle="normal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/alfamart"
@@ -68,11 +71,12 @@
             android:id="@+id/btn_trf_atm"
             android:layout_width="150dp"
             android:layout_height="match_parent"
-            android:background="#0f75ba"
+            android:background="@drawable/button_blue"
             android:paddingTop="20dp"
             android:paddingBottom="20dp">
 
             <custom_font.TextViewMyriad
+                android:textStyle="normal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/transfer_atm"
@@ -89,13 +93,14 @@
             android:id="@+id/btn_inetbank"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:background="#0f75ba"
+            android:background="@drawable/button_blue"
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:paddingTop="20dp"
             android:paddingBottom="20dp">
 
             <custom_font.TextViewMyriad
+                android:textStyle="normal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/inet_banking"
@@ -117,13 +122,14 @@
             android:id="@+id/btn_kartu_kredit"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:background="#0f75ba"
+            android:background="@drawable/button_blue"
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5dp"
+            android:clickable="true">
 
             <custom_font.TextViewMyriad
-                
+                android:textStyle="normal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/kartu_kredit"

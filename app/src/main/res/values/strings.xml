@@ -130,6 +130,30 @@
     <string name="jml_soal_hr_ini">Jumlah soal yang telah dipakai hari ini</string>
     <string name="jml_soal_bln_ini">Jumlah soal yang telah dipakai bulan ini</string>
 
+    <string name="settings_file">account</string>
+    <string name="settings_account_id">account_id</string>
+    <string name="settings_account_username">account_username</string>
+    <string name="settings_account_access_token">access_token</string>
+
+    <string name="error_signin">Incorrect username or password</string>
+    <string name="error_internet_connection">No internet connection</string>
+    <string name="error_data_loading">When loading data error has occurred. Check your network connection.</string>
+    <string name="error_field_empty">Required fields are empty</string>
+    <string name="error_wrong_format">Wrong format</string>
+    <string name="error_min_6_char">Minimum 6 characters</string>
+    <string name="error_min_5_char">Minimum 5 characters</string>
+    <string name="error_min_2_char">Minimum 2 characters</string>
+    <string name="error_login_taken">Username is already taken</string>
+    <string name="error_email_taken">User with this mail is already registered</string>
+    <string name="error_password">Invalid password.</string>
+    <string name="error_password_match">Password not match</string>
+    <string name="error_email">Email invalid.</string>
+    <string name="error_phone">Error phone number</string>
+
+    <string name="success_profile_edit">Data Anda sudah tersimpan</string>
+
+    <string name="failed_profile_edit">Data Anda gagal tersimpan</string>
+
     <string-array name="jns_akademik_array">
         <item>International</item>
         <item>National</item>

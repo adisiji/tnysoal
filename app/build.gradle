@@ -1,4 +1,25 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        // These docs use an open ended version so that our plugin
+        // can be updated quickly in response to Android tooling updates
+
+        // We recommend changing it to the latest version from our changelog:
+        // https://docs.fabric.io/android/changelog.html#fabric-gradle-plugin
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
 apply plugin: 'com.android.application'
+
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
 
 android {
     compileSdkVersion 25
@@ -8,8 +29,8 @@ android {
         applicationId "nb.scode.tanyasoal"
         minSdkVersion 16
         targetSdkVersion 25
-        versionCode 2
-        versionName "Alpha Build 1"
+        versionCode 3
+        versionName "Alpha Build 2"
     }
     buildTypes {
         release {
@@ -23,17 +44,27 @@ android {
     }
 }
 
+ext {
+    supportVersion = '25.1.1'
+    playServiceVersion = '9.8.0'
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:25.1.0'
-    compile 'com.android.support:design:25.1.0'
-    compile 'com.google.android.gms:play-services-appindexing:9.8.0'
-    compile 'com.android.support:support-v4:25.1.0'
-    compile "com.android.support:recyclerview-v7:25.1.0"
+    compile "com.android.support:appcompat-v7:$supportVersion"
+    compile "com.android.support:design:$supportVersion"
+    //compile "com.google.android.gms:play-services-appindexing:$playServiceVersion"
+    compile "com.android.support:support-v4:$supportVersion"
+    compile "com.android.support:recyclerview-v7:$supportVersion"
     compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+    compile "com.google.firebase:firebase-messaging:10.0.1"
 
     /**extension lib**/
+
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.6@aar') {
+        transitive = true;
+    }
 
     //custom spinner
     compile 'com.jaredrummler:material-spinner:1.1.0'
@@ -50,3 +81,5 @@ dependencies {
     compile 'com.google.code.gson:gson:2.6.1'
 
 }
+
+apply plugin: 'com.google.gms.google-services'
